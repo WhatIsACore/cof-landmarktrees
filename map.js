@@ -5,6 +5,7 @@ const $$ = e => document.querySelectorAll(e);
 
 const LONGITUDE = -122;  // +- 0.5
 const LATITUDE = 37.55;  // +- 0.2
+const CENTER = [-121.974, 37.548];
 const ZOOM = 15;
 const GL = maplibregl;  // alias to make library switching easier (in case we decide mapbox is needed later)
 
@@ -16,7 +17,7 @@ const localeOptions = ['en-US', {
 
 const map = new GL.Map({
     container: 'map',
-    center: [LONGITUDE, LATITUDE],
+    center: CENTER,
     style: {
         version: 8,
         glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
@@ -164,13 +165,16 @@ map.on('load', () => {
     // click events
     map.on('click', 'Landmarks', e => {
         const id = e.features[0].properties.id;
+        displayLandmarkCard(id);
+
+        const rightPad = (window.innerWidth - currentCard.getBoundingClientRect().left) * 0.5;
         map.flyTo({
             center: e.features[0].geometry.coordinates,
             zoom: map.getZoom() > 16 ? map.getZoom() : 16,
             speed: 0.5,
+            padding: {right: rightPad},  // center accounting for card
             essential: true
         });
-        displayLandmarkCard(id);
     });
 });
 
@@ -292,6 +296,7 @@ function displayLandmarkCard(id) {
     currentLandmark = id;
     currentCard = $('#landmark-card');
     $('#landmark-card').style.display = 'flex';
+    $('#landmark-card .card-content').scrollTo(0, 0);
 }
 
 // show data attributions
@@ -300,5 +305,6 @@ function displayAttributions() {
 
     currentCard = $('#attributions-card');
     $('#attributions-card').style.display = 'flex';
+    $('#attributions-card .card-content').scrollTo(0, 0);
 }
 $('#attributions-btn').addEventListener('click', displayAttributions);
