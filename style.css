@@ -1,0 +1,394 @@
+:root {
+    --color-light: #fffffa;
+    --color-shadow: #ecf2e6;
+    --color-dark: #0f0800;
+    --color-primary: #c8d8c0;
+    --footer-height: 80px;
+}
+
+* {
+    box-sizing: border-box;
+}
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+sup {
+    line-height: 0;
+    font-size: 0.6em;
+}
+
+document, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Figtree', sans-serif;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.tooltip {
+    font-size: 20px;
+    font-family: 'Figtree', sans-serif;
+}
+.tooltip .maplibregl-popup-tip {
+    margin-top: -1px;
+    border-top-width: 10px;
+}
+.tooltip .maplibregl-popup-content {
+    background: var(--color-light);
+    margin: 0;
+    padding: 6px;
+    box-shadow: none;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.tooltip.landmark .maplibregl-popup-content {
+    padding-right: 35px;
+}
+.tooltip.landmark .maplibregl-popup-content::after {
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    right: 8px;
+    top: calc(50% - 12px);
+    content: url("assets/landmark-vector.svg");
+    width: 20px;
+}
+
+#overlays {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#overlays .right {
+    position: fixed;
+    right: 0;
+    width: 800px;
+    height: calc(100vh - var(--footer-height));
+    padding: 20px;
+}
+#search-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-bottom: 20px;
+    width: 480px;
+}
+#search-wrapper * {
+    pointer-events: auto;
+}
+#search-wrapper .label {
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 600;
+    margin-right: 10px;
+    padding-top: 6px;
+}
+#search-wrapper input#search {
+    display: inline-block;
+    width: 200px;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-dark);
+    padding: 4px;
+    height: 32px;
+    line-height: 1em;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--color-dark);
+    background-color: var(--color-light);
+    opacity: 0.7;
+}
+#search-wrapper input#search::placeholder {
+    color: inherit;
+    opacity: 0.6;
+}
+#search-wrapper input#search:focus {
+    opacity: 1;
+}
+#search-wrapper #search-submit {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    background-color: var(--color-dark);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1em;
+    color: var(--color-light);
+    border-radius: 5px;
+    margin-left: 8px;
+    padding: 7px 8px 0;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#search-wrapper #search-submit:hover {
+    opacity: 1;
+}
+
+.card-wrapper {
+    overflow-y: auto;
+    max-height: 100%;
+}
+.card {
+    padding: 20px;
+    background-color: var(--color-light);
+    pointer-events: auto;
+    display: none;
+    border: 1px solid var(--color-shadow);
+    color: var(--color-dark);
+}
+.card .card-meta {
+    font-size: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.card .card-close {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    opacity: 0.5;
+    cursor: pointer;
+    font-size: 20px;
+}
+.card .card-close:hover {
+    opacity: 1;
+}
+.card .card-divider {
+    margin: 20px 0;
+    border-bottom: 1px solid var(--color-dark);
+    opacity: 0.1;
+}
+.card .card-content {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.card .card-content h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-bottom: 10px;
+}
+.card .card-footer {
+    font-size: 15px;
+}
+.card .card-footer a {
+    text-decoration: underline;
+    color: var(--color-dark);
+    opacity: 0.8;
+}
+.card .card-footer a:hover {
+    opacity: 1;
+}
+
+
+#landmark-card #card-id {
+    font-weight: 700;
+}
+#landmark-card .card-header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-shadow);
+    padding: 20px;
+}
+#landmark-card .card-header .header-left {
+    flex-grow: 1;
+}
+#landmark-card .card-header .header-right {
+    text-align: right;
+}
+#landmark-card #card-spec {
+    font-size: 22px;
+    font-style: italic;
+}
+#landmark-card #card-name {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+}
+#landmark-card #card-name.landmark::after {
+    display: inline-block;
+    position: absolute;
+    margin-left: 8px;
+    top: 2px;
+    content: url("assets/landmark-vector.svg");
+    width: 20px;
+}
+#landmark-card #card-addr {
+    font-size: 22px;
+}
+#landmark-card #card-district {
+    font-size: 22px;
+}
+#landmark-card #card-photos {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    overflow-x: hidden;
+}
+#landmark-card #card-photos .card-photo {
+    flex: 1 1 0;
+    width: 0;
+    height: auto;
+    background-image: var(--photo-src);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#landmark-card .card-photo::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+#landmark-card #card-photos .card-photo:not(:last-child) {
+    margin-right: 10px;
+}
+#landmark-card .card-body {
+    background-color: var(--color-shadow);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+#landmark-card .card-table {
+    margin-bottom: 20px;
+}
+#landmark-card .card-table-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#landmark-card .card-table-left {
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    margin-right: 40px;
+    flex-grow: 1;
+}
+#landmark-card .card-table-right {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    flex-grow: 2;
+}
+#landmark-card .card-table-label {
+    width: 8em;
+    font-size: 18px;
+}
+#landmark-card .card-table-value {
+    width: 50px;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#landmark-card .card-table-value:hover {
+    overflow: visible;
+}
+#landmark-card .card-table-left .card-table-label {
+    width: 4.5em;
+}
+#landmark-card #card-desc {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+}
+#landmark-card #card-desc p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#landmark-card #card-desc p:last-child {
+    margin-bottom: 0;
+}
+#landmark-card .card-footer {
+    text-align: right;
+}
+
+#attributions-card .card-table {
+    margin-bottom: 30px;
+}
+#attributions-card .card-table-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#attributions-card .contributor {
+    font-weight: 500;
+    margin-right: 10px;
+}
+#attributions-card .card-table-label {
+    width: 12em;
+}
+#attributions-card .card-table-value {
+    width: 50px;
+    flex-grow: 1;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#attributions-card .card-table-value:hover {
+    overflow: visible;
+}
+#attributions-card .card-table-value a {
+    text-decoration: underline;
+    color: var(--color-dark);
+    opacity: 0.8;
+    font-weight: 500;
+}
+#attributions-card .card-table-value a:hover {
+    opacity: 1
+}
+
+.maplibregl-ctrl-attrib {
+    display: none;
+}
+
+#overlays .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: var(--footer-height);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+.attributions {
+    font-size: 16px;
+    color: var(--color-dark);
+    font-weight: 500;
+}
+.attributions #attributions-btn {
+    display: inline-block;
+    text-decoration: underline;
+    color: var(--color-dark);
+    cursor: pointer;
+    pointer-events: auto;
+    opacity: 0.8;
+}
+.attributions #attributions-btn:hover {
+    opacity: 1;
+}
+.attributions #attributions-btn::after {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    margin-bottom: -0.3em;
+    background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill-rule='evenodd' viewBox='0 0 20 20'%3E%3Cpath d='M4 10a6 6 0 1 0 12 0 6 6 0 1 0-12 0m5-3a1 1 0 1 0 2 0 1 1 0 1 0-2 0m0 3a1 1 0 1 1 2 0v3a1 1 0 1 1-2 0'/%3E%3C/svg%3E");
+    background-size: contain;
+}

@@ -1,0 +1,242 @@
+<!-- http://zeki.exposed -->
+<!doctype html>
+<html lang='en'>
+    <head>
+        <!-- meta tags -->
+        <title>Fremont Urban Forest Map</title>
+        <meta charset='utf-8' />
+
+        <!-- figtree font :3 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+        <!-- maplibre -->
+        <link href='https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.css' rel='stylesheet' />
+        <script src='https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js'></script>
+
+        <!-- protobuf compression -->
+        <script src='geobuf.js'></script>
+
+        <!-- application -->
+        <link href='style.css' rel='stylesheet' />
+        <script src='layers.js' defer></script>
+        <script src='map.js' defer></script>
+    </head>
+
+    <body>
+        <!-- maplibre container -->
+        <div id='map'></div>
+
+        <!-- overlay panes -->
+        <div id='overlays'>
+            <div class='right'>
+
+                <div id='search-wrapper'>
+                    <span class='label'>Go to address:</span>
+                    <input id='search' type='text' placeholder='39550 Liberty St' autocomplete='off'>
+                    <div id='search-submit'>GO</div>
+                </div>
+
+                <div class='card-wrapper'>
+
+                    <div id='landmark-card' class='card'>
+                        <div class='card-meta'>
+                            <span id='card-id'></span> Landmark Tree
+                            <div class='card-close'>&#10006;</div>
+                        </div>
+                        <div class='card-header'>
+                            <div class='header-left'>
+                                <div id='card-name' class='landmark'></div>
+                                <div id='card-spec'></div>
+                            </div>
+                            <div class='header-right'>
+                                <div id='card-addr'></div>
+                                <div id='card-district'></div>
+                            </div>
+                        </div>
+
+                        <div id='card-photos'></div>
+
+                        <div class='card-body'>
+                            <div class='card-table'>
+                                <div class='card-table-row'>
+                                    <div class='card-table-left'>
+                                        <div class='card-table-label'>Height:</div>
+                                        <div class='card-table-value' id='card-height'></div>
+                                    </div>
+                                    <div class='card-table-right'>
+                                        <div class='card-table-label'>Quantity:</div>
+                                        <div class='card-table-value' id='card-qty'></div>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-left'>
+                                        <div class='card-table-label'>Spread:</div>
+                                        <div class='card-table-value' id='card-spread'></div>
+                                    </div>
+                                    <div class='card-table-right'>
+                                        <div class='card-table-label'>Native Range:</div>
+                                        <div class='card-table-value' id='card-nativeRange'></div>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-left'>
+                                        <div class='card-table-label'>DBH:</div>
+                                        <div class='card-table-value' id='card-dbh'></div>
+                                    </div>
+                                    <div class='card-table-right'>
+                                        <div class='card-table-label'>Landmark Date:</div>
+                                        <div class='card-table-value' id='card-lmDate'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id='card-desc'></div>
+                        </div>
+
+                        <div class='card-footer'>
+                            *information recorded 2010-2012 and may not reflect current state of the tree(s).
+                        </div>
+
+                    </div>
+
+                    <div id='attributions-card' class='card'>
+                        <div class='card-meta'>
+                            Attributions
+                            <div class='card-close'>&#10006;</div>
+                        </div>
+                        <div class='card-divider'></div>
+                        <div class='card-content'>
+
+                            <h2>Data & Geometry Sources</h2>
+                            <div class='card-table'>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Street Trees:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://pg-cloud.com/FremontCA'>
+                                            City of Fremont Urban Forestry
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Landmark Trees:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://www.fremont.gov/government/departments/urban-forestry/landmark-trees'>
+                                            City of Fremont Urban Forestry
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Street Features:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/bdb90b3d924d45a8b8ff2f87dd83c332_0/'>
+                                            City of Fremont Open Data Hub
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Building Features:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/5b4a263844634084af2001f82a5174a5_0'>
+                                            City of Fremont Open Data Hub
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Park & Trail Features:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://openstreetmap.org/'>
+                                            OpenStreetMap Contributors
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Water Bodies:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://opendata.mtc.ca.gov/datasets/cc84a5ab0d2340b6be8e214bf352140b/'>
+                                            Metropolitan Transportation Commission
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>Application Sources</h2>
+                            <div class='card-table'>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Map Renderer:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://github.com/maplibre/maplibre-gl-js'>
+                                            MapLibre GL JS
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Data Compression:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://github.com/mapbox/geobuf'>
+                                            Geobuf
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class='card-table-row'>
+                                    <div class='card-table-label'>Font:</div>
+                                    <div class='card-table-value'>
+                                        <a target='_blank' href='https://www.erikdkennedy.com/projects/figtree.html'>
+                                            FigTree by Erik Kennedy
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>2024 Project Team (City Staff)</h2>
+                            <div class='card-table'>
+                                <div class='card-table-row inline-row'>
+                                    <span class='contributor'>Zeki Xu:</span>
+                                    Map Design & Programming, Survey
+                                </div>
+                                <div class='card-table-row inline-row'>
+                                    <span class='contributor'>Braeden Will:</span>
+                                    Updated Photography, Survey
+                                </div>
+                            </div>
+
+                            <h2>2010 Project Team (City Staff)</h2>
+                            <div class='card-table'>
+                                <div class='card-table-row inline-row'>
+                                    <span class='contributor'>Connie Chao:</span>
+                                    Author, Photography, Desktop Publishing, Survey
+                                </div>
+                                <div class='card-table-row inline-row'>
+                                    <span class='contributor'>Roger Ravenstad:</span>
+                                    Editing, Staff in Charge
+                                </div>
+                                <div class='card-table-row inline-row'>
+                                    <span class='contributor'>Tara Bhuthimethee:</span>
+                                    Editing, Survey
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class='card-divider'></div>
+
+                        <div class='card-footer'>
+                            view the
+                            <a target='_blank' href='https://www.fremont.gov/home/showpublisheddocument/1055/637751441650700000'>original publication (2010, PDF)</a>
+                            of Fremont's landmark trees!
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class='footer'>
+                <div></div>
+                <div class='attributions'>
+                    City of Fremont Urban Forestry / 
+                    <span id='attributions-btn'>view attributions</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

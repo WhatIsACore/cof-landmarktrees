@@ -1,0 +1,95 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Lake Elizabeth"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.962222, 37.548611]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Quarry Lakes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.002739, 37.572158]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Sabercat Creek"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.934095, 37.526225]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ardenwood Historic Farm"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.048170, 37.557783]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Shinn Historical Park and Arboretum"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.980411, 37.565042]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "California Nursery Historical Park"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.989545, 37.577820]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Niles Community Park"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.983320, 37.573792]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mission Peak"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.899518, 37.508277]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Coyote Hills"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.077096, 37.553351]
+            }
+        }
+    ]
+}
