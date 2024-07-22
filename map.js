@@ -291,7 +291,7 @@ function displayLandmarkCard(id) {
 
     currentLandmark = id;
     currentCard = $('#landmark-card');
-    $('#landmark-card').style.display = 'block';
+    $('#landmark-card').style.display = 'flex';
 }
 
 // show data attributions
@@ -299,6 +299,6 @@ function displayAttributions() {
     closeCard();
 
     currentCard = $('#attributions-card');
-    $('#attributions-card').style.display = 'block';
+    $('#attributions-card').style.display = 'flex';
 }
 $('#attributions-btn').addEventListener('click', displayAttributions);
