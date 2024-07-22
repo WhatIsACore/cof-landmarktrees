@@ -5,7 +5,7 @@ const $$ = e => document.querySelectorAll(e);
 
 const LONGITUDE = -122;  // +- 0.5
 const LATITUDE = 37.55;  // +- 0.2
-const ZOOM = 16;
+const ZOOM = 15;
 const GL = maplibregl;  // alias to make library switching easier (in case we decide mapbox is needed later)
 
 const localeOptions = ['en-US', {

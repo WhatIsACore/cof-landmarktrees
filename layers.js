@@ -88,14 +88,14 @@ const LAYERDATA = {
         source: 'Buildings.pbf',
         options: {
             type: 'fill',
-            minzoom: 14,
+            minzoom: 13.5,
             maxzoom: 21,
             paint: {
                 'fill-color': '#ddd8cc',
                 'fill-opacity': [
                     'interpolate', ['exponential', 1.5], ['zoom'],
                     13, 0.1,
-                    16, 1
+                    15.5, 1
                 ]
             }
         }
@@ -104,14 +104,14 @@ const LAYERDATA = {
         source: 'Trees.pbf',
         options: {
             type: 'circle',
-            minzoom: 15,
+            minzoom: 14,
             maxzoom: 21,
             paint: {
                 'circle-color': '#008800',
                 'circle-radius': [
                     'interpolate', ['exponential', 1.5], ['zoom'],
-                    13, 2,
-                    19, 12
+                    14, 2,
+                    19, 10
                 ],
                 'circle-opacity': [
                     'interpolate', ['linear'], ['zoom'],
@@ -119,7 +119,7 @@ const LAYERDATA = {
                         'case', ['boolean', ['feature-state', 'hover'], false],
                         1, 0
                     ],
-                    20, [
+                    19, [
                         'case', ['boolean', ['feature-state', 'hover'], false],
                         1, 0.7
                     ],
@@ -143,27 +143,27 @@ const LAYERDATA = {
         source: 'Streets.pbf',
         options: {
             type: 'symbol',
-            minzoom: 14,
+            minzoom: 13,
             maxzoom: 21,
             layout: {
                 'text-field': ['get', 'NAME'],
                 'text-font': ['Noto Sans Bold'],
                 'text-size': [
                     'interpolate', ['exponential', 1.5], ['zoom'],
-                    13, 12,
-                    16, [
+                    13, 10,
+                    17, [
                         'match', ['get', 'CLASS'],
-                            'PWY', 16,
-                            'ART', 16,
-                            'COL', 14,
-                            12
+                            'PWY', 15,
+                            'ART', 15,
+                            'COL', 13,
+                            10
                     ],
                     21, [
                         'match', ['get', 'CLASS'],
-                            'PWY', 30,
-                            'ART', 30,
-                            'COL', 26,
-                            22
+                            'PWY', 28,
+                            'ART', 28,
+                            'COL', 24,
+                            20
                     ]
                 ],
                 'symbol-placement': 'line',
@@ -175,27 +175,27 @@ const LAYERDATA = {
                 'text-halo-width': 1,
                 'text-opacity': [
                     'interpolate', ['linear'], ['zoom'],
-                    14.5, 0,
+                    14, 0,
+                    15, [
+                        'match', ['get', 'CLASS'],
+                            'PWY', 1,
+                            'ART', 1,
+                            0
+                    ],
                     15.5, [
                         'match', ['get', 'CLASS'],
                             'PWY', 1,
                             'ART', 1,
                             0
                     ],
-                    16, [
-                        'match', ['get', 'CLASS'],
-                            'PWY', 1,
-                            'ART', 1,
-                            0
-                    ],
-                    17, [
+                    16.5, [
                         'match', ['get', 'CLASS'],
                             'PWY', 1,
                             'ART', 1,
                             'COL', 1,
                             0
                     ],
-                    18, 1
+                    17.5, 1
                 ]
             }
         }
@@ -204,15 +204,15 @@ const LAYERDATA = {
         source: 'ParkLabels.pbf',
         options: {
             type: 'symbol',
-            minzoom: 13,
+            minzoom: 12,
             maxzoom: 21,
             layout: {
                 'text-field': ['get', 'name'],
                 'text-font': ['Noto Sans Bold'],
                 'text-size': [
                     'interpolate', ['exponential', 1.5], ['zoom'],
-                    12, 11,
-                    21, 64
+                    12, 10,
+                    21, 60
                 ],
                 'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
                 'text-radial-offset': 1,
@@ -224,8 +224,8 @@ const LAYERDATA = {
                 'text-halo-width': 2,
                 'text-opacity': [
                     'interpolate', ['linear'], ['zoom'],
-                    13, 0,
-                    14, 1
+                    12.5, 0,
+                    13.5, 1
                 ],
             }
         }
@@ -282,11 +282,11 @@ const LAYERDATA = {
                 ],
                 'icon-size': [
                     'interpolate', ['exponential', 1.5], ['zoom'],
-                    13, [
+                    14, [
                         'case', ['get', 'isNotable'],
                             0.1, 0.08
                     ],
-                    19, [
+                    21, [
                         'case', ['get', 'isNotable'],
                             0.25, 0.2
                     ],

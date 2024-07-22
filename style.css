@@ -33,7 +33,7 @@ document, body {
 }
 
 .tooltip {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Figtree', sans-serif;
 }
 .tooltip .maplibregl-popup-tip {
@@ -43,22 +43,22 @@ document, body {
 .tooltip .maplibregl-popup-content {
     background: var(--color-light);
     margin: 0;
-    padding: 6px;
+    padding: 3px 5px;
     box-shadow: none;
     font-weight: 600;
     text-transform: capitalize;
 }
 .tooltip.landmark .maplibregl-popup-content {
-    padding-right: 35px;
+    padding-right: 30px;
 }
 .tooltip.landmark .maplibregl-popup-content::after {
     display: inline-block;
     align-items: center;
     position: absolute;
     right: 8px;
-    top: calc(50% - 12px);
+    top: calc(50% - 10px);
     content: url("assets/landmark-vector.svg");
-    width: 20px;
+    width: 16px;
 }
 
 #overlays {
@@ -72,7 +72,7 @@ document, body {
 #overlays .right {
     position: fixed;
     right: 0;
-    width: 800px;
+    width: 720px;
     height: calc(100vh - var(--footer-height));
     padding: 20px;
 }
@@ -87,7 +87,7 @@ document, body {
     pointer-events: auto;
 }
 #search-wrapper .label {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1em;
     font-weight: 600;
     margin-right: 10px;
@@ -97,17 +97,18 @@ document, body {
     display: inline-block;
     width: 200px;
     flex-grow: 1;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--color-dark);
     padding: 4px;
-    height: 32px;
+    height: 28px;
     line-height: 1em;
     outline: none;
     border: none;
-    border-bottom: 3px solid var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
     background-color: var(--color-light);
     opacity: 0.7;
+    font-family: 'Figtree', sans-serif;
 }
 #search-wrapper input#search::placeholder {
     color: inherit;
@@ -118,14 +119,14 @@ document, body {
 }
 #search-wrapper #search-submit {
     display: inline-block;
-    width: 50px;
+    width: 46px;
     text-align: center;
     background-color: var(--color-dark);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1em;
     color: var(--color-light);
-    border-radius: 5px;
+    border-radius: 4px;
     margin-left: 8px;
     padding: 7px 8px 0;
     opacity: 0.7;
@@ -148,7 +149,7 @@ document, body {
     color: var(--color-dark);
 }
 .card .card-meta {
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -158,30 +159,30 @@ document, body {
     top: -7px;
     opacity: 0.5;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
 }
 .card .card-close:hover {
     opacity: 1;
 }
 .card .card-divider {
-    margin: 20px 0;
+    margin: 15px 0;
     border-bottom: 1px solid var(--color-dark);
     opacity: 0.1;
 }
 .card .card-content {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
 }
 .card .card-content h2 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .card .card-footer {
-    font-size: 15px;
+    font-size: 13px;
 }
 .card .card-footer a {
     text-decoration: underline;
@@ -200,7 +201,7 @@ document, body {
     display: flex;
     flex-direction: row;
     background-color: var(--color-shadow);
-    padding: 20px;
+    padding: 15px;
 }
 #landmark-card .card-header .header-left {
     flex-grow: 1;
@@ -209,12 +210,12 @@ document, body {
     text-align: right;
 }
 #landmark-card #card-spec {
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
 }
 #landmark-card #card-name {
     position: relative;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
 }
 #landmark-card #card-name.landmark::after {
@@ -226,15 +227,15 @@ document, body {
     width: 20px;
 }
 #landmark-card #card-addr {
-    font-size: 22px;
+    font-size: 20px;
 }
 #landmark-card #card-district {
-    font-size: 22px;
+    font-size: 20px;
 }
 #landmark-card #card-photos {
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
+    margin: 15px 0;
     overflow-x: hidden;
 }
 #landmark-card #card-photos .card-photo {
@@ -252,20 +253,20 @@ document, body {
     padding-top: 100%;
 }
 #landmark-card #card-photos .card-photo:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 #landmark-card .card-body {
     background-color: var(--color-shadow);
-    padding: 20px;
+    padding: 15px;
     margin-bottom: 10px;
 }
 #landmark-card .card-table {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 #landmark-card .card-table-row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 #landmark-card .card-table-left {
     display: flex;
@@ -282,12 +283,12 @@ document, body {
 }
 #landmark-card .card-table-label {
     width: 8em;
-    font-size: 18px;
+    font-size: 16px;
 }
 #landmark-card .card-table-value {
     width: 50px;
     flex-grow: 1;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
@@ -300,8 +301,8 @@ document, body {
     width: 4.5em;
 }
 #landmark-card #card-desc {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 23px;
     font-weight: 400;
 }
 #landmark-card #card-desc p {
@@ -316,13 +317,13 @@ document, body {
 }
 
 #attributions-card .card-table {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 #attributions-card .card-table-row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
-    font-size: 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
 }
 #attributions-card .contributor {
     font-weight: 500;
@@ -368,7 +369,7 @@ document, body {
     align-items: end;
 }
 .attributions {
-    font-size: 16px;
+    font-size: 13px;
     color: var(--color-dark);
     font-weight: 500;
 }
@@ -386,9 +387,9 @@ document, body {
 .attributions #attributions-btn::after {
     display: inline-block;
     content: '';
-    width: 20px;
-    height: 20px;
-    margin-bottom: -0.3em;
+    width: 18px;
+    height: 18px;
+    margin-bottom: -0.4em;
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill-rule='evenodd' viewBox='0 0 20 20'%3E%3Cpath d='M4 10a6 6 0 1 0 12 0 6 6 0 1 0-12 0m5-3a1 1 0 1 0 2 0 1 1 0 1 0-2 0m0 3a1 1 0 1 1 2 0v3a1 1 0 1 1-2 0'/%3E%3C/svg%3E");
     background-size: contain;
 }
