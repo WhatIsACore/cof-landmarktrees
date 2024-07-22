@@ -49,13 +49,13 @@ document, body {
     text-transform: capitalize;
 }
 .tooltip.landmark .maplibregl-popup-content {
-    padding-right: 30px;
+    padding-right: 28px;
 }
 .tooltip.landmark .maplibregl-popup-content::after {
     display: inline-block;
     align-items: center;
     position: absolute;
-    right: 8px;
+    right: 6px;
     top: calc(50% - 10px);
     content: url("assets/landmark-vector.svg");
     width: 16px;
@@ -226,9 +226,8 @@ document, body {
     display: inline-block;
     position: absolute;
     margin-left: 8px;
-    top: 2px;
     content: url("assets/landmark-vector.svg");
-    width: 20px;
+    width: 18px;
 }
 #landmark-card #card-addr {
     font-size: 20px;
