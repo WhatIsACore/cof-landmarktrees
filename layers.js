@@ -213,10 +213,7 @@ const LAYERDATA = {
                     'interpolate', ['exponential', 1.5], ['zoom'],
                     14, 10,
                     21, 36
-                ],
-                'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
-                'text-radial-offset': 1,
-                'text-justify': 'auto'
+                ]
             },
             paint: {
                 'text-color': 'rgb(88, 124, 55)',
@@ -268,6 +265,10 @@ const LAYERDATA = {
                 source: 'landmark-icon.png'
             },
             {
+                name: 'landmark-multiple-icon',
+                source: 'landmark-multiple-icon.png'
+            },
+            {
                 name: 'landmark-notable-icon',
                 source: 'landmark-notable-icon.png'
             }
@@ -278,19 +279,24 @@ const LAYERDATA = {
             maxzoom: 21,
             layout: {
                 'icon-image': [
-                    'case', ['get', 'isNotable'],
-                        'landmark-notable-icon',
+                    'match', ['get', 'type'],
+                        'notable', 'landmark-notable-icon',
+                        'multiple', 'landmark-multiple-icon',
                         'landmark-icon'
                 ],
                 'icon-size': [
                     'interpolate', ['exponential', 1.5], ['zoom'],
                     14, [
-                        'case', ['get', 'isNotable'],
-                            0.1, 0.08
+                        'match', ['get', 'type'],
+                            'notable', 0.1,
+                            'multiple', 0.08,
+                            0.08
                     ],
                     21, [
-                        'case', ['get', 'isNotable'],
-                            0.25, 0.2
+                        'match', ['get', 'type'],
+                            'notable', 0.25,
+                            'multiple', 0.2,
+                            0.2
                     ],
                 ],
                 'icon-allow-overlap': true,

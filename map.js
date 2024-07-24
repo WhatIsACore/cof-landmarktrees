@@ -112,7 +112,9 @@ map.on('load', () => {
             { source: 'Trees', id: targetTree.id },
             { hover: true }
         );
-        let name = targetTree.properties.name.length > 0 ? targetTree.properties.name : 'unknown';
+        let name = targetTree.properties.name.length > 0 ?
+            targetTree.properties.name.replace(/\b\w/g, c => c.toUpperCase()) :  // capitalize words
+            'unknown';
         setTooltip(targetTree.geometry.coordinates, `${name}`);
     });
 
@@ -147,7 +149,9 @@ map.on('load', () => {
             { source: 'Landmarks', id: targetLandmark.id },
             { hover: true }
         );
-        setTooltip(targetLandmark.geometry.coordinates, `${targetLandmark.properties.name}`, true);
+        let name = targetLandmark.properties.name;
+        if (targetLandmark.properties.type === 'multiple') name += ' (multiple)';
+        setTooltip(targetLandmark.geometry.coordinates, `${name}`, true);
     });
 
     map.on('mouseleave', 'Landmarks', e => {
@@ -275,7 +279,7 @@ function displayLandmarkCard(id) {
     $('#card-addr').innerHTML = data.addr;
     $('#card-district').innerHTML = districts[data.id.split('-')[0]];
     $('#card-height').innerHTML = `${data.height} ft.`;
-    $('#card-qty').innerHTML = data.trees.length;
+    $('#card-qty').innerHTML = data.qty;
     $('#card-spread').innerHTML = `${data.spread} ft.`;
     $('#card-nativeRange').innerHTML = data.nativeRange;
     $('#card-dbh').innerHTML = data.dbh;

@@ -1,6 +1,7 @@
 {
     "CEN-1": {
         "id": "CEN-1",
+        "qty": "1",
         "addr": "2826 Benchmark Ave",
         "name": "Norfolk Island Pine",
         "spec": "Araucaria heterophylla",
@@ -11,7 +12,7 @@
         "dbh": "3'0\"",
         "nativeRange": "Norfolk Island near Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "This landmark Araucaria is located on a residential property in a neighborhood that historically was a single large plot of land. It can be seen from the intersection of Paseo Padre Parkway and Peralta Boulevard.\\nThe Norfolk Island Pine is a conifer native to Norfolk Island, a small island between Australia and New Zealand. It has horizontal branches that are densely covered with small, bright green, needle-like leaves.[8]",
         "caption": "Branch and leaflets.",
         "trees": [
@@ -27,6 +28,7 @@
     },
     "CEN-2": {
         "id": "CEN-2",
+        "qty": "1",
         "addr": "5238 Central Ave",
         "name": "Blackwood Acacia",
         "spec": "Acacia melanoxylon",
@@ -37,7 +39,7 @@
         "dbh": "4'2\"",
         "nativeRange": "Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "The Blackwood Acacia is an evergreen tree that produces creamy-white flowers in early spring. A special feature of the Blackwood Acacia is the wood that is harvested for cabinets and decorative work in Australia.[11] It is located in the center of the 5.48 acre Holy Ghost Cemetery. In 2004, the Blackwood Acacia was enlisted to the Official Registry of California Big Trees and obtained State Champion status.",
         "caption": "Leaves have vertical veins.",
         "trees": [
@@ -53,6 +55,7 @@
     },
     "CEN-3": {
         "id": "CEN-3",
+        "qty": "1",
         "addr": "37167 Fremont Blvd",
         "name": "California Black Walnut",
         "spec": "Juglans hindsii",
@@ -63,7 +66,7 @@
         "dbh": "4'1\"",
         "nativeRange": "Northern California",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "The Northern California Walnut is a deciduous tree native to Northern California. It has pinnately compound leaves and a dark brown etchy-looking bark.[16]\\nAt the time of this publication, <i>Juglans hindsii</i> was listed on the California Native Plant Society Inventory of Rare and Endangered Plants.",
         "caption": "Deep vertical grooves on bark.",
         "trees": [
@@ -79,6 +82,7 @@
     },
     "CEN-4": {
         "id": "CEN-4",
+        "qty": "2",
         "addr": "37619 Fremont Blvd",
         "name": "Southern Magnolia",
         "spec": "Magnolia grandiflora",
@@ -89,7 +93,7 @@
         "dbh": "1'7\"",
         "nativeRange": "Southeastern United States",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "The Southern Magnolia is a broadleaf evergreen tree. It has large lustrous green leaves with a deep rust-brown underside. It also produces large waxy-white colored flowers that grow up to 8 to 10 inches across composed of 6 cup-shaped petals which emerge throughout summer and fall.[5]\\nThese two landmark trees are located at Fremont Boulevard and Central Avenue across the street from a landmarked Deodar Cedar.\\nJuly 2024 Update: Only one appears to be remaining.",
         "caption": "Glossy leaves and large flowers.",
         "trees": [
@@ -105,6 +109,7 @@
     },
     "CEN-5": {
         "id": "CEN-5",
+        "qty": "1",
         "addr": "37638 Fremont Blvd",
         "name": "Deodar Cedar",
         "spec": "Cedrus deodara",
@@ -115,7 +120,7 @@
         "dbh": "3'3\"",
         "nativeRange": "Western Himalayas",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Nov",
+        "photoDate": "Nov-10",
         "desc": "The Deodar Cedar is a conifer native to the Western Himalayas.[4] This landmark cedar tree is located on a residential lot near the Holy Spirit Church. It is clearly visible along Fremont Boulevard as it creates a noticeable presence with its towering height.",
         "caption": "Short pointy needles and cones.",
         "trees": [
@@ -131,6 +136,7 @@
     },
     "CEN-6": {
         "id": "CEN-6",
+        "qty": "2",
         "addr": "37767 Fremont Blvd",
         "name": "Deodar Cedar ",
         "spec": "Cedrus deodara",
@@ -141,7 +147,7 @@
         "dbh": "3'5\"",
         "nativeRange": "Western Himalayas",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "These two landmark deodars are located on the Pepper Tree Apartments property adjacent to the giant California Pepper Tree. These deodars provide plenty of shade for the apartment complex and add character to Centerville's low skyline.\\nThe Deodar Cedar is a conifer native to the Western Himalayas which can grow to great heights of up to 150 feet and has extremely graceful pendulous branches that can form a 50 foot crown spread.[4]",
         "caption": "Second Deodar Cedar landmark tree at this location.",
         "trees": [
@@ -165,6 +171,7 @@
     },
     "CEN-7": {
         "id": "CEN-7",
+        "qty": "1",
         "addr": "37767 Fremont Blvd",
         "name": "California Pepper Tree",
         "spec": "Schinus molle",
@@ -175,7 +182,7 @@
         "dbh": "12'2\"",
         "nativeRange": "Peruvian Andes in South America",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "This landmark tree is located near two landmark Deodar Cedars. As of June 2012, this California Pepper Tree had the largest DBH of all landmark trees in Fremont. Due to its size, several branches have steel supports to prevent breakage as shown in the photo above.\\nThe California Pepper is an evergreen tree. In the early summer, flowers appear followed by red berries in great quantities, leading to the colloquial name 'Pepper-tree.' [17]",
         "caption": "Unique branching pattern.",
         "trees": [
@@ -191,6 +198,7 @@
     },
     "CEN-8": {
         "id": "CEN-8",
+        "qty": "1",
         "addr": "37845 Fremont Blvd",
         "name": "Saucer Magnolia",
         "spec": "Magnolia x soulangeana",
@@ -201,7 +209,7 @@
         "dbh": "3'4\"",
         "nativeRange": "Asia, South and Central America",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "The Saucer Magnolia is located on a property that was owned by early Fremont entrepreneur Otto N. Hirsh in 1917. Early records indicate the distinguished Craftsman Bungalow-style house was built in 1915. Since then, it has been owned by prominent individuals including Fremont historian Dr. Robert Fisher.[20] The current owner of this Saucer Magnolia stated that the tree was purchased by the original property owner from a nursery located in present-day Hayward. Orange orchards also thrived throughout the property, though only a few remnants of them still remain.",
         "caption": "Ovate green leaves.",
         "trees": [
@@ -217,6 +225,7 @@
     },
     "CEN-9": {
         "id": "CEN-9",
+        "qty": "1",
         "addr": "37957 Fremont Blvd",
         "name": "Coast Redwood",
         "spec": "Sequoia sempervirens",
@@ -227,7 +236,7 @@
         "dbh": "5'2\"",
         "nativeRange": "Coast of So. Oregon & Central CA.",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "This landmark tree is located near other redwoods and has a strong presence along Fremont Boulevard.\\nThe Coast Redwood is California's state tree. It is an evergreen tree with the ability to perpetuate itself by sprouting. After a fire, the redwood tree often sends out sprouts around the base of its trunk, forming redwood grove rings which are common in sequoia forests.[17]",
         "caption": "Flat needles and leaves.",
         "trees": [
@@ -243,6 +252,7 @@
     },
     "CEN-10": {
         "id": "CEN-10",
+        "qty": "1",
         "addr": "38219 Fremont Blvd",
         "name": "Deodar Cedar",
         "spec": "Cedrus deodara",
@@ -253,7 +263,7 @@
         "dbh": "3'11\"",
         "nativeRange": "Himalayas",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This landmark Deodar Cedar has historic sentimental value to the current property owner. In 1900, her father bought the property to prevent it from developing into a Bank of America and to provide a home for his family. In 1924, when the owner was only 4 years old, her father purchased the Deodar Cedar and planted it in their front yard as a Christmas tree. At the time, it was perfect for the holiday, but if you see it along Fremont Boulevard now the tree towers above the house as if it is 'reaching for the heavens!', as quoted by the owner.",
         "caption": "Large trunk with vertical scaffold branch.",
         "trees": [
@@ -269,6 +279,7 @@
     },
     "CEN-11": {
         "id": "CEN-11",
+        "qty": "1",
         "addr": "38162 Glenmoor Dr",
         "name": "Evergreen Ash",
         "spec": "Fraxinus uhdei",
@@ -279,7 +290,7 @@
         "dbh": "4'1\"",
         "nativeRange": "Mexico",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "The Evergreen Ash is an evergreen to semi-evergreen tree native to Mexico. It is a rapidly growing tree and forms an upright narrow canopy structure when young, eventually spreading as it ages. The Evergreen Ash has 5-9 odd-pinnately compound leaflets that appear glossy and can grow up to four inches long.[19] This tree provides plenty of shade with it is massive spreading canopy and creates a showy presence in a residential block with very few tall trees.",
         "caption": "Glossy leaves and serrated edges.",
         "trees": [
@@ -295,6 +306,7 @@
     },
     "CEN-12": {
         "id": "CEN-12",
+        "qty": "1",
         "addr": "4467 Mattos Dr",
         "name": "Red-flowering Gum",
         "spec": "Corymbia ficifolia",
@@ -305,7 +317,7 @@
         "dbh": "4'0\"",
         "nativeRange": "Western Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This landmark tree is located on a residential property visible from the street. The Scarlet Gum is a broadleaf evergreen tree native to Western Australia. It features year-round red flowers and golden-colored bark making it an attractive tree.[13] The Scarlet Gum also has showy, year-round clusters of red flowers.",
         "caption": "Gold-colored bark.",
         "trees": [
@@ -321,6 +333,7 @@
     },
     "CEN-13": {
         "id": "CEN-13",
+        "qty": "2",
         "addr": "3813 Parish Ave",
         "name": "Camphor",
         "spec": "Cinnamomum camphora",
@@ -331,7 +344,7 @@
         "dbh": "3'10\"",
         "nativeRange": "China, Japan",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "These two landmark Camphor trees are located on Parish Avenue, formerly known as School Street. The property is part of the August May Tract, named after the subdivision's developer August May, Jr., filed on March 26, 1906. Early assessor maps show that the first property owner of 3813 Parish Avenue was Dr. Elon A. Ormsby, who resided in the house from 1918 to 1936, though the house was built in 1910. In 1945, the house was sold to Centerville's Sunrise Bakery owners, Lawrence and Emmeline Rose. Today, the house is historically known for its Neo-Classical/Colonial Revival style architecture, and is framed by two large shady Camphor trees.[21]",
         "caption": "Glossy yellow-green leaves.",
         "trees": [
@@ -355,6 +368,7 @@
     },
     "CEN-14": {
         "id": "CEN-14",
+        "qty": "1",
         "addr": "4555 Thornton Ave",
         "name": "Copper Beech",
         "spec": "Fagus sylvatica 'Purpurea'",
@@ -365,7 +379,7 @@
         "dbh": "2'7\"",
         "nativeRange": "Caucasus region",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "This landmark Copper Beech can be found at the Countrywood Apartments on Thornton Avenue and Coronado Drive. Due to its height, the Copper Beech is clearly visible from the street amongst the other trees in the area.\\nThe Copper Beech is a deciduous tree that produces edible beech-nuts and ovular red and green leaves that turn a glowing yellow during the autumn season.[13]",
         "caption": "Green leaves with red veins.",
         "trees": [
@@ -381,6 +395,7 @@
     },
     "CEN-15": {
         "id": "CEN-15",
+        "qty": "1",
         "addr": "3136 Ignacio Ter",
         "name": "Bottle Brush",
         "spec": "Callistemon viminalis",
@@ -391,7 +406,7 @@
         "dbh": "2'8\"",
         "nativeRange": "New South Wales, Australia",
         "lmDate": "6/19/2012",
-        "photoDate": "12-Jun",
+        "photoDate": "Jun-12",
         "desc": "This Bottle Brush tree is located at the City's former coporation yard. Remnants of the buildings and walkways that once existed there can still be seen. Bottle Brush trees are typically fast-growing and have narrow leaves that are light green in color. The Bottle Brush also produces red brush-like flowers from late spring into summer. This specimen is on the Register of California Big Trees.\\nJuly 2024 Update: This tree is now prominently displayed within a housing development.",
         "caption": "Bright red brushes of the Bottle Brush Tree.",
         "trees": [
@@ -407,6 +422,7 @@
     },
     "CEN-16": {
         "id": "CEN-16",
+        "qty": "1",
         "addr": "4218 Baine Ave",
         "name": "California Pepper Tree",
         "spec": "Schinus molle",
@@ -417,7 +433,7 @@
         "dbh": "3'7\"",
         "nativeRange": "Peruvian Andes in South America",
         "lmDate": "6/19/2012",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "This California Pepper Tree is located at Maple Square Apartments across from the train tracks. At the time of landmarking, the tree was observed to be in a healthy state. Its beautiful branch structure and foliage provides a stately presence to the streetscape.\\nThe California Pepper is an evergreen tree. In the beginning of summer, flowers appear followed by red berries in great quantities, leading to the colloquial name 'Pepper-tree.'[17]",
         "caption": "Close-up of the lanceolate-shaped leaves and trunk detail.",
         "trees": [
@@ -433,6 +449,7 @@
     },
     "CEN-17": {
         "id": "CEN-17",
+        "qty": "1",
         "addr": "3351 Eggers Dr",
         "name": "Queensland Bottle Tree",
         "spec": "Brachychiton rupestris",
@@ -443,7 +460,7 @@
         "dbh": "3'0\"",
         "nativeRange": "Australia",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "The Queensland Bottle Tree is an evergreen that can grow up to heights of 25 feet. This tree is notable for its bottle-like structure because the trunk looks bulgy and swollen. It produces small yellow flowers, deeply lobed leaves when young, and unlobed leaves when mature.\\nThis tree demonstrates its unique appearance near Washington High School on Eggers Drive.",
         "caption": "Buldging trunk of the Queensland Bottle Tree.",
         "trees": [
@@ -459,6 +476,7 @@
     },
     "CRL-1": {
         "id": "CRL-1",
+        "qty": "2",
         "addr": "39152 Fremont Hub",
         "name": "California Pepper Tree",
         "spec": "Schinus molle",
@@ -469,7 +487,7 @@
         "dbh": "6'5\"",
         "nativeRange": "South America",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jun",
+        "photoDate": "Jun-10",
         "desc": "There are two landmark California Pepper Trees located in the Fremont Hub Shopping Center near Williams Historical Park. As shown in the photograph above, one tree is located in the foreground with the second tree in the background.\\nThe California Pepper Tree is an evergreen tree. In the beginning of summer, it produces flowers followed by many red berries, leading to the colloquial name 'pepper tree.'[17]",
         "caption": "One of two landmark California Pepper Trees. This is distinguishable for its pedestrian walkway location.",
         "trees": [
@@ -493,6 +511,7 @@
     },
     "CRL-2": {
         "id": "CRL-2",
+        "qty": "1",
         "addr": "4025 Mowry Ave",
         "name": "California Sycamore",
         "spec": "Platanus racemosa",
@@ -503,7 +522,7 @@
         "dbh": "4'11\"",
         "nativeRange": "California",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Nov",
+        "photoDate": "Nov-10",
         "desc": "This sycamore can be seen on the busy intersection of Mowry Avenue and Fremont Boulevard.\\nThe California Sycamore, also known as the Western Sycamore and the California Plane Tree, is a deciduous tree native to California. They especially thrive along streams, foothills and the Coast Range. This tree has a sturdy trunk that divides into secondary branches and yellowish green, palmately lobed leaves.[7]",
         "caption": "Sycamore leaves.",
         "trees": [
@@ -519,6 +538,7 @@
     },
     "CRL-3": {
         "id": "CRL-3",
+        "qty": "1",
         "addr": "1251 Peralta Blvd",
         "name": "Chilean Bellota",
         "spec": "Cryptocarya rubra",
@@ -529,8 +549,8 @@
         "dbh": "2'9\"",
         "nativeRange": "Chile",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
-        "desc": "The Chilean Bellota was planted in 1876 by the Shinn family. It is located near the lankmark ginkgo tree and continues to thrive in a healthy state.\\nThis tree is an evergreen tree native to Chile. Its unique bark features deep horizontal lines running throughout making it distinguishable among other trees. The Chilean Bellota grows to moderate height, and has shiny-green leaves with prominent veins.[19]\\nJuly 2024 Update: The previously referenced landmark ginkgo tree has since died; however, this landmark tree continues to thrive as one of the most unique trees in Fremont.",
+        "photoDate": "Jul-10",
+        "desc": "The Chilean Bellota was planted in 1876 by the Shinn family. It is located near the lankmark ginkgo tree and continues to thrive in a healthy state.\\nThis tree is an evergreen tree native to Chile. Its unique bark features deep horizontal lines running throughout making it distinguishable among other trees. The Chilean Bellota grows to moderate height, and has shiny-green leaves with prominent veins.[19]\\nJuly 2024 Update: The previously referenced landmark ginkgo tree has since died; however, this landmark tree continues to thrive as one of the rarest and most unique trees in Fremont.",
         "caption": "Vertical branching pattern and horizontal trunk lines.",
         "trees": [
             {
@@ -545,6 +565,7 @@
     },
     "CRL-4": {
         "id": "CRL-4",
+        "qty": "1",
         "addr": "1251 Peralta Blvd",
         "name": "Moreton Bay Fig",
         "spec": "Ficus macrophylla",
@@ -555,7 +576,7 @@
         "dbh": "7'7\"",
         "nativeRange": "Queensland, Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "The Moreton Bay Fig can be found near the Shinn House at the Shinn Historical Park and Arboretum. It was planted in 1876 by the Shinn family. This tree makes an extraordinary impression to those who see it.\\nThe landmark fig tree is an evergreen tree native to Queensland, Australia. It is a handsome tree characterized by its wide-spreading branches and large buttressed trunk.[19]",
         "caption": "Impressive above-ground root structure.",
         "trees": [
@@ -564,13 +585,14 @@
                 "pid": "2716",
                 "coordinates": [
                     "-121.981057",
-                    "37.56552"
+                    "37.565520"
                 ]
             }
         ]
     },
     "CRL-6": {
         "id": "CRL-6",
+        "qty": "2",
         "addr": "1251 Peralta Blvd",
         "name": "Chilean Wine Palm",
         "spec": "Jubaea chilensis",
@@ -581,7 +603,7 @@
         "dbh": "4'11\"",
         "nativeRange": "Chile",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This pair of Chilean Wine Palms was planted in 1878 by the Shinn family and is located in the Japanese garden designed by Shig Nakamoto.\\nThe Chilean Wine Palm, also known as Syrup Palm or Monkey Coconut Palm, has a massive trunk patterned with scars from fallen leaves. This palm is also popular for its sap and nuts which are converted into sugar and candy respectively.[16]",
         "caption": "View of leaves ground-level.",
         "trees": [
@@ -589,7 +611,7 @@
                 "id": "CRL-6",
                 "pid": "3632",
                 "coordinates": [
-                    "-121.98032",
+                    "-121.980320",
                     "37.565462"
                 ]
             },
@@ -597,7 +619,7 @@
                 "id": "CRL-6",
                 "pid": "3633",
                 "coordinates": [
-                    "-121.98031",
+                    "-121.980310",
                     "37.565501"
                 ]
             }
@@ -605,6 +627,7 @@
     },
     "CRL-7": {
         "id": "CRL-7",
+        "qty": "1",
         "addr": "1251 Peralta Blvd",
         "name": "Saucer Magnolia",
         "spec": "Magnolia soulangeana",
@@ -615,7 +638,7 @@
         "dbh": "1'6\"",
         "nativeRange": "China",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "The Saucer Magnolia is located to the right of the Victorian-style Shinn House.\\nIt is a hybrid between <i>Magnolia denudata</i> (Yulan Magnolia) and <i>Magnolia liliflora</i> (Mulan Magnolia), orginally bred in 1820 by a retired French cavalry officer from Napolean's army. The Saucer Magnolia, often called Tulip Tree, produces dazzling white, pink and purple blossoms around March and April before foliage appears.[5]",
         "caption": "Broad, flat simple leaves with prominent veins.",
         "trees": [
@@ -623,7 +646,7 @@
                 "id": "CRL-7",
                 "pid": "3631",
                 "coordinates": [
-                    "-121.98066",
+                    "-121.980660",
                     "37.565587"
                 ]
             }
@@ -631,6 +654,7 @@
     },
     "CRL-8": {
         "id": "CRL-8",
+        "qty": "1",
         "addr": "1251 Peralta Blvd",
         "name": "Dawn Redwood",
         "spec": "Metasequoia glyptostroboides",
@@ -641,7 +665,7 @@
         "dbh": "2'6\"",
         "nativeRange": "China",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "The Dawn Redwood is a deciduous conifer native to China. It has soft, light-green, flat needles that appear in the spring and turn yellow-brown before dropping in autumn. This Dawn Redwood was planted in the Shinn Historical Park and Arboretum on Arbor Day in 1965. It was only 10 years old when it was enlisted as a landmark tree.[14]",
         "caption": "Rough bark texture.",
         "trees": [
@@ -657,6 +681,7 @@
     },
     "CRL-9": {
         "id": "CRL-9",
+        "qty": "2",
         "addr": "1483 Gilbert Ave",
         "name": "Cork Oak",
         "spec": "Quercus suber",
@@ -667,7 +692,7 @@
         "dbh": "3'7\"",
         "nativeRange": "Western Mediterranean & North Africa",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "These landmark Cork Oaks are found near the train tracks on Shinn Street.\\nThe Cork Oak is an evergreen tree native to the Western Mediterranean region, most commonly in Portugal, Spain and Algeria where extensive cork plantations may be found. The thick cork bark is cut from trees on an average of every twelve years to be used for wine bottle toppers and flooring, among other purposes.[7]",
         "caption": "Bark is used to produce cork products.",
         "trees": [
@@ -676,7 +701,7 @@
                 "pid": "10414",
                 "coordinates": [
                     "-121.983309",
-                    "37.56604"
+                    "37.566040"
                 ]
             },
             {
@@ -691,6 +716,7 @@
     },
     "CRL-10": {
         "id": "CRL-10",
+        "qty": "3",
         "addr": "39800 Paseo Padre Pkwy",
         "name": "Sydney Red Gum",
         "spec": "Angophora costata",
@@ -701,7 +727,7 @@
         "dbh": "3'0\"",
         "nativeRange": "Australia",
         "lmDate": "6/19/2012",
-        "photoDate": "12-Jun",
+        "photoDate": "Jun-12",
         "desc": "Central Park is home to eight landmark Sydney Red Gums of different DBH (diameter at breast height, or 4.5 feet from ground level) sizes, with the largest specimen measured at 3 feet. Sydney Red Gums have a smooth and multicolored bark. It has 6 inch long green to red-colored leaves and somewhat gnarly branches. The Sydney Red Gum to the left of the large photo shown above is on the Register of California Big Trees.\\nJuly 2024 Update: As of recent surveys, only 3 of the trees remain.",
         "caption": "Multicolored bark and twisted branch structure of the Sydney Red Gum.",
         "trees": [
@@ -733,6 +759,7 @@
     },
     "CRL-11": {
         "id": "CRL-11",
+        "qty": "1",
         "addr": "1251 Peralta Blvd",
         "name": "Bald Cypress",
         "spec": "Taxodium distichum",
@@ -743,7 +770,7 @@
         "dbh": "3'0\"",
         "nativeRange": "Southeastern United States",
         "lmDate": "6/19/2012",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This Bald Cypress was planted in 1878 at Shinn Park and is located near the Maidenhair Tree and Chilean Bellota. Bald Cypresses can grow up to 100 feet tall in the wild and up to 70 feet in gardens. Its half inch-long leaves are feathery and delicate and yellow-tinged green in color. This tree tolerates wet conditions and develops knobby growth called knees when growing in water-logged soil. In the southeastern United States, Bald Cypresses are usually found in swamps and commonly have buttressed trunk bases.[34]",
         "caption": "Upward view of the trunk and branch structure of the Bald Cypress.",
         "trees": [
@@ -759,6 +786,7 @@
     },
     "CRL-12": {
         "id": "CRL-12",
+        "qty": "1",
         "addr": "1251 Peralta Blvd",
         "name": "English Yew",
         "spec": "Taxus baccata",
@@ -769,7 +797,7 @@
         "dbh": "2'7\"",
         "nativeRange": "Europe, North Africa, Western Asia",
         "lmDate": "6/19/2012",
-        "photoDate": "12-Jun",
+        "photoDate": "Jun-12",
         "desc": "This landmark Irish Yew is located at Shinn Historical Park and Arboretum. A notable characteristic that sets the Irish Yew apart from other yews is that its canopy tends to spread at the top. All parts of the tree except for the flesh are extremely poisonous and immediate help must be sought after ingestion of any part of the tree.",
         "caption": "Short, dense needles of the Irish Yew.",
         "trees": [
@@ -785,6 +813,7 @@
     },
     "IRV-1": {
         "id": "IRV-1",
+        "qty": "2",
         "addr": "40673 Fremont Blvd",
         "name": "Southern Magnolia",
         "spec": "Magnolia grandiflora",
@@ -795,7 +824,7 @@
         "dbh": "3'0\"",
         "nativeRange": "Southeastern United States",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jun",
+        "photoDate": "Jun-10",
         "desc": "These Southern Magnolias are located along Fremont Boulevard in the Fremont Shopping Center. Before the current development, there was a drive-through diary located in-between these two landmark trees.\\nThe Southern Magnolia is a broadleaf evergreen tree. It has large lustrous green leaves with a deep rust-brown underside. It also produces large waxy-white colored flowers that grow up to 8 to 10 inches across composed of 6 cup-shaped petals, which emerge throughout summer and fall.[5]",
         "caption": "One of the two landmark Southern Magnolias.",
         "trees": [
@@ -819,6 +848,7 @@
     },
     "IRV-2": {
         "id": "IRV-2",
+        "qty": "1",
         "addr": "40991 Fremont Blvd",
         "name": "Incense Cedar",
         "spec": "Libocedrus decurrens",
@@ -829,7 +859,7 @@
         "dbh": "2'9\"",
         "nativeRange": "Oregon, California and Nevada",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jun",
+        "photoDate": "Jun-10",
         "desc": "This landmark Incense Cedar is located in the Irvington Plaza Park at the historic 'five corners' intersection. The park was dedicated to the City on August 12, 1958 by the Mission Peak Lodge #114 Independent Order of Odd Fellows. Though the tree appears unhealthy, Incense Cedars can live up to 600 years old under favorable conditions.[5] The tree is situated near Fremont's oldest commercial buildings, the earliest constructed in 1876.[31] Together, these historical landmark buildings are a remnant of the original downtown and serve as examples of Fremont's early commercial development.\\nJuly 2024 Update: This tree has been topped and lost some of its character. Topping a tree is a violation of City ordinance, as it shortens its life and causes structural issues that dramatically increase the need for future maintenance.",
         "caption": "Bark and branch structure.",
         "trees": [
@@ -837,7 +867,7 @@
                 "id": "IRV-2",
                 "pid": "5742",
                 "coordinates": [
-                    "-121.95971",
+                    "-121.959710",
                     "37.533011"
                 ]
             }
@@ -845,6 +875,7 @@
     },
     "IRV-3": {
         "id": "IRV-3",
+        "qty": "6",
         "addr": "3264 Bruce Dr",
         "name": "Canary Island Date Palm",
         "spec": "Phoenix canariensis",
@@ -855,7 +886,7 @@
         "dbh": "",
         "nativeRange": "Canary Islands",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "The semicircular formation of Canary Island Date Palms is a remnant of the historical Gallegos Winery. Early photographs dating back to 1906 show that the palms were planted in front of the winery.[23] In 1893, the Gallegos Winery was comprised of about 600 acres and had a cooperage totalling 1,250,000 gallons the of 2,058,800 gallons produced overall in Irvington at the time. Unfortunately the winery was destroyed during the 1906 earthquake and the vineyards faced decline during the following years. Eventually the lands were sold for housing and road development.[33]",
         "caption": "Photo showing the palms in front of the Gallego Winery before the 1906 earthquake. Photo courtesy of Fremont Museum of Local History.",
         "trees": [
@@ -871,7 +902,7 @@
                 "id": "IRV-3",
                 "pid": "108088",
                 "coordinates": [
-                    "-121.95255",
+                    "-121.952550",
                     "37.532692"
                 ]
             },
@@ -880,7 +911,7 @@
                 "pid": "108089",
                 "coordinates": [
                     "-121.952496",
-                    "37.53265"
+                    "37.532650"
                 ]
             },
             {
@@ -888,7 +919,7 @@
                 "pid": "108090",
                 "coordinates": [
                     "-121.952475",
-                    "37.53261"
+                    "37.532610"
                 ]
             },
             {
@@ -911,6 +942,7 @@
     },
     "MSJ-1": {
         "id": "MSJ-1",
+        "qty": "1",
         "addr": "20 Espada Court",
         "name": "California Sycamore",
         "spec": "Platanus racemosa",
@@ -921,7 +953,7 @@
         "dbh": "4'10\"",
         "nativeRange": "California foothills and coast",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "This landmark Sycamore tree is located on a residential lot and is proudly owned by the residents. The tree is in good condition and has wide-spreading branches.\\nThe California Sycamore, also known as the Western Sycamore and the California Plane Tree, is a deciduous tree native to California. It thrives along streams, foothills and the Coast Range. Its leaves are yellowish green and palmately lobed much like the leaves of a maple.[7]",
         "caption": "White bark and picturesque branching patterns.",
         "trees": [
@@ -937,6 +969,7 @@
     },
     "MSJ-2": {
         "id": "MSJ-2",
+        "qty": "8",
         "addr": "43216 Gallegos Ave",
         "name": "Mexican Fan Palm",
         "spec": "Washingtonia robusta",
@@ -947,7 +980,7 @@
         "dbh": "1'2\"",
         "nativeRange": "Mexico",
         "lmDate": "6/7/1991",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "These landmark Mexican Fan Palms are located in a residential neighborhood, where they provide height appeal to the area's relatively low skyline.\\nThe Mexican Fan Palm is native to Mexico. It grows rapidly and has brilliant green foliage that forms a compact crown.[19]",
         "caption": "Remnants of dead fronds.",
         "trees": [
@@ -988,7 +1021,7 @@
                 "pid": "108148",
                 "coordinates": [
                     "-121.929347",
-                    "37.53183"
+                    "37.531830"
                 ]
             },
             {
@@ -1012,13 +1045,14 @@
                 "pid": "16066",
                 "coordinates": [
                     "-121.929701",
-                    "37.5321"
+                    "37.532100"
                 ]
             }
         ]
     },
     "MSJ-4": {
         "id": "MSJ-4",
+        "qty": "1",
         "addr": "23 Las Palmas Ave",
         "name": "California Bay Laurel",
         "spec": "Umbellularia californica",
@@ -1029,7 +1063,7 @@
         "dbh": "4'8\"",
         "nativeRange": "California, Oregon Coast Range",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "The California Bay is an evergreen tree native to California, the Oregon Coast Range, and loamy elevations of the Sierra Nevada Range. It can grow up to 75 feet in height and over 100 feet in crown width. The leaves are extremely aromatic and are often used for culinary purposes. The California Bay's wood is heavy and has beautifully figured grain for craft objects such as vases, trays, bowls and pins.[19]",
         "caption": "Smooth-margined leaves.",
         "trees": [
@@ -1045,6 +1079,7 @@
     },
     "MSJ-5": {
         "id": "MSJ-5",
+        "qty": "1",
         "addr": "39812 Mission Blvd",
         "name": "California Pepper Tree",
         "spec": "Schinus molle",
@@ -1055,7 +1090,7 @@
         "dbh": "9'9\"",
         "nativeRange": "South America",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This landmark tree is located in a parking lot and bordered by a planting strip.\\nThe California Pepper is an evergreen tree native to South America. It was brought to California by Spanish padres during the Missionary period. In the early summer, flowers appear followed by red berries in great quantities, leading to the colloquial name 'Pepper-tree.'[17]",
         "caption": "Pinnately compound leaves and clusters of berries.",
         "trees": [
@@ -1071,6 +1106,7 @@
     },
     "MSJ-6": {
         "id": "MSJ-6",
+        "qty": "5",
         "addr": "55 E Las Palmas Ave",
         "name": "Olive",
         "spec": "Olea europaea",
@@ -1081,7 +1117,7 @@
         "dbh": "4'3\"",
         "nativeRange": "Mediterranean region",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This neighborhood in the Mission San Jose district is home to a group of 5 landmark Olive trees. As of August 2010, they are among the tallest Olive trees found in Fremont.\\nOlives are broadleaf evergreens native to the Mediterranean region where they can live to be 1000 years old. They were brought from the Mediterranean to the Mission gardens by Franciscan fathers for oil and ornamental use.[14]",
         "caption": "Smooth-margined leaves and olives.",
         "trees": [
@@ -1122,13 +1158,68 @@
                 "pid": "19605",
                 "coordinates": [
                     "-121.951247",
-                    "37.55786"
+                    "37.557860"
+                ]
+            }
+        ]
+    },
+    "MSJ-7": {
+        "id": "MSJ-7",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Mexican Fan Palm",
+        "spec": "Washingtonia robusta",
+        "page": 55,
+        "isNotable": false,
+        "height": "70",
+        "spread": "9",
+        "dbh": "2'4\"",
+        "nativeRange": "Mexico",
+        "lmDate": "6/7/1991",
+        "photoDate": "Jun-10",
+        "desc": "This row of fan palms was planted along a sidewalk strip near the Mission San Jose as part of the Palmdale landscape design. These palms are listed as one of the City's Landscape Primary Historic Resources, which is a collection of the City's historical landmarks.[27] Other Primary Historic Resources include sites, buildings and natural features.\\nThe Mexican Fan Palm grows rapidly and has brilliant green foliage that forms a compact crown.[19]",
+        "caption": "Canopy structure.",
+        "trees": [
+            {
+                "id": "MSJ-7",
+                "pid": "",
+                "coordinates": [
+                    "-121.921568",
+                    "37.536595"
+                ]
+            }
+        ]
+    },
+    "MSJ-9": {
+        "id": "MSJ-9",
+        "qty": "multiple",
+        "addr": "43148 Mission Blvd",
+        "name": "Canary Island Date Palm",
+        "spec": "Phoenix canariensis",
+        "page": 57,
+        "isNotable": false,
+        "height": "35",
+        "spread": "27",
+        "dbh": "2'10\"",
+        "nativeRange": "Canary Islands",
+        "lmDate": "6/7/1991",
+        "photoDate": "Aug-10",
+        "desc": "There are approximately sixty-six palms aligned in two rows along Mission Creek. The bases of these Canary Island Date Palms are infested with ivy and poison oak. These palms are listed as one of the City's Landscape Primary Historic Resources, which is a collection of the City's historical landmarks.[27]\\nThe Canary Island Date Palm was to have been brought by the missionary fathers to California.[14]",
+        "caption": "View from St. Joseph's Terrace.",
+        "trees": [
+            {
+                "id": "MSJ-9",
+                "pid": "",
+                "coordinates": [
+                    "-121.920431",
+                    "37.536025"
                 ]
             }
         ]
     },
     "MSJ-10": {
         "id": "MSJ-10",
+        "qty": "3",
         "addr": "43148 Mission Blvd",
         "name": "California Sycamore ",
         "spec": "Plantanus racemosa",
@@ -1139,7 +1230,7 @@
         "dbh": "3'7\"",
         "nativeRange": "California",
         "lmDate": "3/28/2006",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "These three California Sycamores are engulfed ivy and poision oak, causing some of their branches to decline. They are located near the landmark rows of Canary Island Date Palms.\\nThe California Sycamore, also known as the Western Sycamore and the California Plane Tree, is a deciduous tree. They thrive along streams, foothills and the Coast Range.[7]",
         "caption": "Palmately-lobed leaves.",
         "trees": [
@@ -1148,7 +1239,7 @@
                 "pid": "",
                 "coordinates": [
                     "-121.919994",
-                    "37.53619"
+                    "37.536190"
                 ]
             },
             {
@@ -1171,6 +1262,7 @@
     },
     "MSJ-11": {
         "id": "MSJ-11",
+        "qty": "5",
         "addr": "43314 Mission Blvd",
         "name": "Canary Island Date Palm",
         "spec": "Phoenix canariensis",
@@ -1181,7 +1273,7 @@
         "dbh": "2'6\"",
         "nativeRange": "Canary Islands",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "There are three Canary Island Date Palms in front of Mission San Jose Museum and two in the adjacent Mission San Jose Bicentennial Park.\\nThe Canary Island Date Palm is a native of the Canary Islands. It was said that they were brought to California by the missionary fathers.[14]",
         "caption": "Canopy structure.",
         "trees": [
@@ -1198,7 +1290,7 @@
                 "pid": "2470",
                 "coordinates": [
                     "-121.919822",
-                    "37.53303"
+                    "37.533030"
                 ]
             },
             {
@@ -1229,6 +1321,7 @@
     },
     "MSJ-12": {
         "id": "MSJ-12",
+        "qty": "1",
         "addr": "43551 Mission Blvd",
         "name": "Deodar Cedar",
         "spec": "Cedrus deodara",
@@ -1239,7 +1332,7 @@
         "dbh": "3'8\"",
         "nativeRange": "Himalayas",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jun",
+        "photoDate": "Jun-10",
         "desc": "This Deodar Cedar is the only one of its species that is a landmark tree in the Mission San Jose District, as of September 2010. It was planted in the 1930s and is located adjacent to a building that used was the City of Fremont's first City Hall. The tree is the focal point of a plaza's courtyard and provides an abundance of shade to most of the surrounding buildings. It is bordered by a low wall of shrubs that encircles the base of the tree to prevent vandalism. This Deodar Cedar is in a healthy state and provides aesthetic and environmental value to its surroundings.",
         "caption": "Short needle-like leaves.",
         "trees": [
@@ -1253,8 +1346,171 @@
             }
         ]
     },
+    "MSJ-13": {
+        "id": "MSJ-13",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Olive",
+        "spec": "Olea europaea",
+        "page": 60,
+        "isNotable": false,
+        "height": "30",
+        "spread": "35",
+        "dbh": "1'8\"",
+        "nativeRange": "Mediterranean region",
+        "lmDate": "3/17/1972",
+        "photoDate": "Jun-10",
+        "desc": "There are approximately 147 landmark Olives at this location. These Olives were planted from the old Mission grounds to the Old Irvington train station.\\nOlives are broadleaf evergreen trees native to the Mediterranean region where they can live to be over 1000 years old. They were brought to Mission gardens by Franciscan fathers for oil and ornamental-use.[14]",
+        "caption": "Dark-green leaves with a light-green under-side.",
+        "trees": [
+            {
+                "id": "MSJ-13",
+                "pid": "",
+                "coordinates": [
+                    "-121.918856",
+                    "37.529747"
+                ]
+            }
+        ]
+    },
+    "MSJ-14": {
+        "id": "MSJ-14",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Olive",
+        "spec": "Olea europaea",
+        "page": 63,
+        "isNotable": false,
+        "height": "25",
+        "spread": "35",
+        "dbh": "2'0\"",
+        "nativeRange": "Mediterranean region",
+        "lmDate": "6/7/1991",
+        "photoDate": "Jul-10",
+        "desc": "These landmark Olive trees are located on the Ohlone campus and are planted in two rows. The Ohlone College grounds were once the Linda Vista Vineyards and the Linda Vista Park, and it is likely that these olives were planted as part of those properties. These olives are listed as one of the City's Landscape Primary Historic Resources, which is a collection of the City's historical landmarks.[27] Olives are broadleaf evergreen trees, and were brought to mission gardens by Franciscan fathers for oil and ornamental-use.[14]",
+        "caption": "Base of an Olive tree.",
+        "trees": [
+            {
+                "id": "MSJ-14",
+                "pid": "",
+                "coordinates": [
+                    "-121.917156",
+                    "37.528834"
+                ]
+            }
+        ]
+    },
+    "MSJ-15": {
+        "id": "MSJ-15",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Olive",
+        "spec": "Olea europaea",
+        "page": 67,
+        "isNotable": false,
+        "height": "18",
+        "spread": "27",
+        "dbh": "1'8\"",
+        "nativeRange": "Mediterranean region",
+        "lmDate": "6/7/1991",
+        "photoDate": "Jul-10",
+        "desc": "These landmark Olives are remnants of what used be the Palmdale Estate. They create a stunning median along the length of Olive Avenue and Starr Street. These palms are listed as one of the City's Landscape Primary Historic Resources, which is a collection of the City's historical landmarks.[23]\\nOlives are broadleaf evergreen trees whose character develop with age as the trunks become gnarled and twisted.[14]",
+        "caption": "Olives in planter median located in residential neighborhood.",
+        "trees": [
+            {
+                "id": "MSJ-15",
+                "pid": "",
+                "coordinates": [
+                    "-121.924869",
+                    "37.536143"
+                ]
+            }
+        ]
+    },
+    "MSJ-16": {
+        "id": "MSJ-16",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Olive",
+        "spec": "Olea europaea",
+        "page": 68,
+        "isNotable": false,
+        "height": "15",
+        "spread": "22",
+        "dbh": "2'4\"",
+        "nativeRange": "Mediterranean region",
+        "lmDate": "6/7/1991",
+        "photoDate": "Sep-10",
+        "desc": "There are 105 landmark Olive trees throughout St. Joseph's Terrace and School and Dominican Covent Grounds. They were planted in scattered rows throughout the property and were believed to be identical to the variety brought from Spain during the eighteenth century.[29]\\nOlives are broadleaf evergreen trees, and are able to live up to 1000 years old in the Mediterranean region. The Olive tree's character develops with age as the trunks become gnarled and twisted.[14]",
+        "caption": "Lanceolate leaves; distinctive trunk texture.",
+        "trees": [
+            {
+                "id": "MSJ-16",
+                "pid": "",
+                "coordinates": [
+                    "-121.918594",
+                    "37.534424"
+                ]
+            }
+        ]
+    },
+    "MSJ-17": {
+        "id": "MSJ-17",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Canary Island Date Palm",
+        "spec": "Phoenix canariensis",
+        "page": 69,
+        "isNotable": false,
+        "height": "45",
+        "spread": "25",
+        "dbh": "2'2\"",
+        "nativeRange": "Canary Islands",
+        "lmDate": "6/7/1991",
+        "photoDate": "Aug-10",
+        "desc": "There is a row of 22 palms under landmark status on the St. Joseph's Church property. The Native Sons of the Golden West, in 1915 and 1950, saved the surviving portion of the Mission wing and converted it into a museum.\\nThe Canary Island Date Palm is a native of the Canary Islands and were brought to California by the missionary fathers.[14]",
+        "caption": "Eastern view of the Canary Island Date Palm row.",
+        "trees": [
+            {
+                "id": "MSJ-17",
+                "pid": "",
+                "coordinates": [
+                    "-121.919586",
+                    "37.535218"
+                ]
+            }
+        ]
+    },
+    "MSJ-18": {
+        "id": "MSJ-18",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Palm Trees",
+        "spec": "Washingtonia robusta",
+        "page": 70,
+        "isNotable": false,
+        "height": "70",
+        "spread": "10",
+        "dbh": "1'11\"",
+        "nativeRange": "Mexico",
+        "lmDate": "6/7/1991",
+        "photoDate": "Aug-10",
+        "desc": "A row of towering landmark Mexican Fan Palms are located on the street median along Washington Boulevard and Olive Avenue. These palms were originally planted as part of the Palmdate Estate and were later transplanted at this street median.These palms are listed as one of the City's Landscape Primary Historic Resources, which is a collection of the City's historical landmarks.[23]\\nThe Mexican Fan Palm grows rapidly and has brilliant green foliage that forms a compact crown.[19]",
+        "caption": "Leaves and canopy structure.",
+        "trees": [
+            {
+                "id": "MSJ-18",
+                "pid": "",
+                "coordinates": [
+                    "-121.947568",
+                    "37.532702"
+                ]
+            }
+        ]
+    },
     "MSJ-19": {
         "id": "MSJ-19",
+        "qty": "2",
         "addr": "201 Washington Blvd",
         "name": "California Pepper Tree",
         "spec": "Schinus molle",
@@ -1265,7 +1521,7 @@
         "dbh": "3'11\"",
         "nativeRange": "Peruvian Andes in South America",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "A row of these landmark trees are located near the entrance of Palmdale Estates, which was originally part of the Old San Jose Mission garden.\\nThe California Pepper is an evergreen tree. It was brought to California by Spanish padres during the Missionary period. In the beginning of summer, flowers appear followed by red berries in great quantities, leading to the colloquial name 'Pepper-tree.'[17]",
         "caption": "Trunk detail close-up.",
         "trees": [
@@ -1274,7 +1530,7 @@
                 "pid": "16128",
                 "coordinates": [
                     "-121.922666",
-                    "37.5332"
+                    "37.533200"
                 ]
             },
             {
@@ -1287,8 +1543,63 @@
             }
         ]
     },
+    "MSJ-20": {
+        "id": "MSJ-20",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Canary Island Date Palm",
+        "spec": "Phoenix canariensis",
+        "page": 72,
+        "isNotable": false,
+        "height": "60",
+        "spread": "25",
+        "dbh": "2'1\"",
+        "nativeRange": "Canary Islands",
+        "lmDate": "6/7/1991",
+        "photoDate": "Aug-10",
+        "desc": "These palms were originally planted for the entrance into the old orphanage, 'Saint Mary's of the Palms.' They are listed as one of the City's Landscape Primary Historic Resources, which is a collection of the City's historical landmarks.[23]\\nThe Canary Island Date Palm was said to be brought to California by the missionary fathers.[14] The Mexican Fan Palm grows rapidly and has brilliant green foliage that forms a compact crown.[19]",
+        "caption": "Row of palms along sidewalk.",
+        "trees": [
+            {
+                "id": "MSJ-20",
+                "pid": "",
+                "coordinates": [
+                    "-121.926995",
+                    "37.530618"
+                ]
+            }
+        ]
+    },
+    "MSJ-21": {
+        "id": "MSJ-21",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Mexican Fan Palm",
+        "spec": "Washingtonia robusta",
+        "page": 64,
+        "isNotable": false,
+        "height": "60",
+        "spread": "15",
+        "dbh": "2'0\"",
+        "nativeRange": "Mexico",
+        "lmDate": "6/19/2012",
+        "photoDate": "Sep-10",
+        "desc": "These landmark Mexican Fan Palms have a towering presence along Palm Avenue. Each palm has varying heights from 50 feet to 70 feet high. From Mission Boulevard to Mission Creek Drive, the landmark palms are located on the public right-of-way opposite from Mission San Jose High School along Palm Avenue. The row of landmark palms continues from Mission Creek Drive to 4 Winds Terrace on the opposite side from the previous row.",
+        "caption": "Close-up of dead frond bases.",
+        "trees": [
+            {
+                "id": "MSJ-21",
+                "pid": "",
+                "coordinates": [
+                    "-121.933653",
+                    "37.542963"
+                ]
+            }
+        ]
+    },
     "MSJ-22": {
         "id": "MSJ-22",
+        "qty": "2",
         "addr": "181 Stevie Ct",
         "name": "Italian Cypress",
         "spec": "Cupressus sempervirens",
@@ -1299,7 +1610,7 @@
         "dbh": "2'7\"",
         "nativeRange": "Southern Europe and Western Asia",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Jan",
+        "photoDate": "Jan-11",
         "desc": "These Italian Cypresses were saved from demolition in anticipation for the construction of new subdivision in the early 2000s. This set of landmark trees provide a very prominent presence in the thoroughfare, and are located next to rolling hills creating a reminiscent Italian landscape.\\nThe Italian Cypress is a dense and narrow conifer. It has scale-like leaves, horizontal branches and dark green foliage. They are known to grow up to 60 ft. high under favorable conditions.",
         "caption": "Dense branches and dark green foliage.",
         "trees": [
@@ -1323,6 +1634,7 @@
     },
     "MSJ-23": {
         "id": "MSJ-23",
+        "qty": "6",
         "addr": "43600 Mission Blvd",
         "name": "Mountain Date Palm",
         "spec": "Phoenix loureirii  ",
@@ -1333,7 +1645,7 @@
         "dbh": "2'6\"",
         "nativeRange": "from India to China",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "Mountain Date Palms are native in from India to China. They resemble smaller, slimmer versions of the Canary Island Palms.\\nThis date palm is located on the Ohlone Campus along the Anza-Pine Road. It is found amongst 4 other Mountain Date Palms.",
         "caption": "The dead fronds of the Mountain Date Palm.",
         "trees": [
@@ -1342,7 +1654,7 @@
                 "pid": "108281",
                 "coordinates": [
                     "-121.915958",
-                    "37.5271"
+                    "37.527100"
                 ]
             },
             {
@@ -1373,14 +1685,15 @@
                 "id": "MSJ-23",
                 "pid": "108285",
                 "coordinates": [
-                    "-121.91526",
-                    "37.52737"
+                    "-121.915260",
+                    "37.527370"
                 ]
             }
         ]
     },
     "MSJ-24": {
         "id": "MSJ-24",
+        "qty": "1",
         "addr": "1837 Vía Orinda",
         "name": "Coast Live Oak",
         "spec": "Quercus agrifolia",
@@ -1391,7 +1704,7 @@
         "dbh": "4'5\"",
         "nativeRange": "California",
         "lmDate": "6/19/2012",
-        "photoDate": "12-Feb",
+        "photoDate": "Feb-12",
         "desc": "The Sabercat Creek, a thriving riparian habitat, is home to a grand Coast Live Oak. This landmark tree specimen is perched on the slopes and can easily be accessed along the creek's trail. The tree suffers from a major branch break wound, but still maintains excellent branch structure and a wide picturesque canopy typical of oak trees. Historically, the Sabercat Creek Canyon became an area of interest when several prehistoric mammoth and sabercat fossils were unearthed in the 1940s. Currently, conservations efforts from local organizations seek to maintain and improve the creek's natural benefits and beauty.",
         "caption": "Photo showing wooden planks nailed into the tree's trunk. Photo also shows the tree's vast canopy spread in the background.",
         "trees": [
@@ -1405,8 +1718,36 @@
             }
         ]
     },
+    "NIL-1": {
+        "id": "NIL-1",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Camphor",
+        "spec": "Cinnamomum camphora",
+        "page": 74,
+        "isNotable": false,
+        "height": "45",
+        "spread": "50",
+        "dbh": "4'6\"",
+        "nativeRange": "China, Japan",
+        "lmDate": "3/17/1972",
+        "photoDate": "Jul-10",
+        "desc": "The rows of camphors along the 37000 block of Second Street in the Niles District are a spectacular sight. Their canopies shade the homes and streets from hot summer rays, and also provide aesthetic appeal to the neighborhood.\\nThe camphor is a broadleaf evergreen tree that is native to China and Japan. It produces glossy yellow-green leaves, small white flowers, and blackberry-like fruit.[4]",
+        "caption": "View of tree canopy from sidewalk path.",
+        "trees": [
+            {
+                "id": "NIL-1",
+                "pid": "",
+                "coordinates": [
+                    "-121.985489",
+                    "37.577407"
+                ]
+            }
+        ]
+    },
     "NIL-2": {
         "id": "NIL-2",
+        "qty": "1",
         "addr": "37112 2nd St",
         "name": "Tulip Tree",
         "spec": "Liriodendron tulipifera",
@@ -1417,7 +1758,7 @@
         "dbh": "4'6\"",
         "nativeRange": "Eastern United States",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "This landmark tree is located in the Niles District across from the Grace Baptist Church and next to a spectacular row of landmark camphor trees.\\nThe Tulip Tree is a deciduous tree native to the eastern United States. It is known for its lyre-shaped leaves that turn yellow in the fall and its tulip-shaped green, cream and orange flowers that bloom in the summer.[5]\\nJuly 2024 Update: This tree is in significant decline.",
         "caption": "Leaves have four lobes and prominent veins.",
         "trees": [
@@ -1426,13 +1767,14 @@
                 "pid": "74404",
                 "coordinates": [
                     "-121.984644",
-                    "37.57719"
+                    "37.577190"
                 ]
             }
         ]
     },
     "NIL-3": {
         "id": "NIL-3",
+        "qty": "1",
         "addr": "37587 2nd St",
         "name": "Spanish Chestnut",
         "spec": "Castanea sativa",
@@ -1443,7 +1785,7 @@
         "dbh": "4'10\"",
         "nativeRange": "S. Europe, N. Africa, S. Asia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "This Spanish Chestnut is located along a residential sidewalk in the Niles District.\\nThe Spanish Chestnut is a deciduous tree native to southern Europe, northern Africa and southern Asia. It can reach impressive heights of up to 100 feet and even greater in spread. It produces chestnuts and has showy white flowers in long catkins that appear in June or July.[6]\\nJuly 2024 Update: This tree has been topped and lost some of its character. Topping a tree is a violation of City ordinance, as it shortens its life and causes structural issues that dramatically increase the need for future maintenance.",
         "caption": "Oblong-lanceolate leaves with serrated edges. Nuts are edible.",
         "trees": [
@@ -1459,6 +1801,7 @@
     },
     "NIL-4": {
         "id": "NIL-4",
+        "qty": "1",
         "addr": "315 I St",
         "name": "Coast Live Oak & Cork Oak hybrid",
         "spec": "Quercus agrifolia x Quercus suber",
@@ -1469,7 +1812,7 @@
         "dbh": "3'5\"",
         "nativeRange": "California",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jun",
+        "photoDate": "Jun-10",
         "desc": "Compared to the other landmark trees, this tree is special because it is a hybrid of the Coast Live Oak and Cork Oak. Its bark has characteristics of a Coast Live Oak, while the leaves closely resemble that of a Cork Oak's.\\nThe Coast Live Oak is known for its highly picturesque silhouette, assuming many artistic shapes. The Cork Oak is an evergreen tree whose thick cork bark is cut from the trunks on an average of every twelve years.[7]",
         "caption": "",
         "trees": [
@@ -1485,6 +1828,7 @@
     },
     "NIL-6": {
         "id": "NIL-6",
+        "qty": "1",
         "addr": "36501 Niles Blvd",
         "name": "Bunya-bunya",
         "spec": "Araucaria bidwillii",
@@ -1495,7 +1839,7 @@
         "dbh": "4'2\"",
         "nativeRange": "Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This landmark tree can be found in the historic California Nursery Company near the experimental vegetable garden. The top of this tree broke off during a storm in 1980s.\\nThe Bunya Bunya, native to Austalia, is a conifer that is planted in coastal and valley regions of California. It has a dense, wide-spreading, pyramidal crown with horizontal branches that dip gradually downward and turn up at the tips.[8]",
         "caption": "Green alternate leaves.",
         "trees": [
@@ -1504,13 +1848,14 @@
                 "pid": "80200",
                 "coordinates": [
                     "-121.992197",
-                    "37.57923"
+                    "37.579230"
                 ]
             }
         ]
     },
     "NIL-8": {
         "id": "NIL-8",
+        "qty": "5",
         "addr": "36501 Niles Blvd",
         "name": "Monterey Cypress",
         "spec": "Cupressus macrocarpa",
@@ -1521,7 +1866,7 @@
         "dbh": "4'0\"",
         "nativeRange": "Monterey Peninsula",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "The City has five Monterey Cypresses located in the California Nursery Historical Park near the landmark Senegal Date Palm.\\nThe Monterey Cypress is an evergreen tree native to the Monterey Peninsula. It is there that the Monterey Cypress's famous irregular windswept appearance makes a popular scenic look-out along the famous 17-mile drive. Monterey Cypresses have deep-green, cord-like foliage and globular cones that grow up to one inch in diameter.[12]\\nJuly 2024 Update: 3 of these landmark trees remain.",
         "caption": "",
         "trees": [
@@ -1529,7 +1874,7 @@
                 "id": "NIL-8",
                 "pid": "80361",
                 "coordinates": [
-                    "-121.99099",
+                    "-121.990990",
                     "37.577724"
                 ]
             },
@@ -1553,6 +1898,7 @@
     },
     "NIL-9": {
         "id": "NIL-9",
+        "qty": "1",
         "addr": "36501 Niles Blvd",
         "name": "Dwarf Blue Gum",
         "spec": "Eucalyptus globulus 'Compacta'",
@@ -1563,7 +1909,7 @@
         "dbh": "3'7\"",
         "nativeRange": "Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "Similar to the Blue Gum, Dwarf Blue Gums are characterized with dark green sickle-shaped leaves and fibrous peeling bark.[13] This particular Dwarf Blue Gum was the mother tree bred by John Rock in the 1800s. It was propagated and sold all over California. Dwarf Blue Gums are used for low screening and is often planted next to larger blue gums for monarch butterly habitat.\\nUnfortunately, due to the development of nearby land the tree's health has been in decline. The trunk of the tree was cut in half making it highly susceptible to decease and decay",
         "caption": "The trunk of this tree was cut in half and now has a gaping hole making it highly susceptible to disease and decay.",
         "trees": [
@@ -1579,6 +1925,7 @@
     },
     "NIL-10": {
         "id": "NIL-10",
+        "qty": "2",
         "addr": "36501 Niles Blvd",
         "name": "Melaleuca",
         "spec": "Melaleuca styphelioides",
@@ -1589,7 +1936,7 @@
         "dbh": "4'5\"",
         "nativeRange": "Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "These two landmark Melaleucas are located near the California Nursery's main office building and the landmark Cork Oak. Each of these Melaleucas were observed to have multiple trunks.\\nThe Prickly Paperbark is an evergreen tree native to Australia. It has deep roots, dense pendulous branches, light green leaves and clusters of creamy white flowers that appear from summer through fall.[14]",
         "caption": "Sessile unstalked leaves with pointy tips.",
         "trees": [
@@ -1597,7 +1944,7 @@
                 "id": "NIL-10",
                 "pid": "80163",
                 "coordinates": [
-                    "-121.99195",
+                    "-121.991950",
                     "37.579719"
                 ]
             },
@@ -1613,6 +1960,7 @@
     },
     "NIL-11": {
         "id": "NIL-11",
+        "qty": "6",
         "addr": "36501 Niles Blvd",
         "name": "Canary Island Pine",
         "spec": "Pinus canariensis",
@@ -1623,7 +1971,7 @@
         "dbh": "3'7\"",
         "nativeRange": "Canary Islands",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Sep",
+        "photoDate": "Sep-10",
         "desc": "There are two groups of landmark Canary Island Pines on the California Nursery Company property. One landmark tree is located near the historic Landers House and is visible from Niles Boulevard. The group of five Canary Island Pines is located near the Vallejo Adobe.\\nThis tree is pyramidal in shape with distinctive tiers of branches and whorls representing one year's growth.[15] Canary Island Pines have 3 needles per fascicle bundle.",
         "caption": "Cone of a Canary Island Pine.",
         "trees": [
@@ -1631,7 +1979,7 @@
                 "id": "NIL-11",
                 "pid": "80575",
                 "coordinates": [
-                    "-121.9893",
+                    "-121.989300",
                     "37.578485"
                 ]
             }
@@ -1639,6 +1987,7 @@
     },
     "NIL-13": {
         "id": "NIL-13",
+        "qty": "1",
         "addr": "585 Pickering Ave",
         "name": "Norfolk Island Pine",
         "spec": "Araucaria heterophylla",
@@ -1649,7 +1998,7 @@
         "dbh": "2'9\"",
         "nativeRange": "Norfolk Island near Australia",
         "lmDate": "3/17/1972",
-        "photoDate": "10-Jul",
+        "photoDate": "Jul-10",
         "desc": "This tree is located in a residential property where it gracefully displays its majestic height against a hilly backdrop.\\nThe Norfolk Island Pine is a conifer with a very formal, pyramidal form and with beautifully proportioned branches spreading out in horizontal planes. Its branches are densely covered with small, bright green, needle-like leaves.[8]",
         "caption": "Large symmetrical-like leaves.",
         "trees": [
@@ -1665,6 +2014,7 @@
     },
     "NIL-14": {
         "id": "NIL-14",
+        "qty": "1",
         "addr": "841 Rancho Arroyo Pkwy",
         "name": "Coast Redwood",
         "spec": "Sequoia sempervirens",
@@ -1675,7 +2025,7 @@
         "dbh": "7'2\"",
         "nativeRange": "Coast of So. Oregon & Central CA.",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "The neighborhood of Rancho Arroyo Parkway was originally part of the California Nursery Company. It is not known whether or not the Coast Redwood was planted as part of the nursery, but its presence is landmark-worthy.\\nThe Coast Redwood is California's state tree. It is an evergreen tree and has the ability to perpetuate itself by sprouting. After a fire, a redwood tree often sends out sprouts around the base of its trunk, forming redwood grove rings which are common in sequoia forests.[17]",
         "caption": "This specimen displays a split trunk stucture, a feature rarely found in Coast Redwoods.",
         "trees": [
@@ -1683,7 +2033,7 @@
                 "id": "NIL-14",
                 "pid": "74037",
                 "coordinates": [
-                    "-121.99372",
+                    "-121.993720",
                     "37.574726"
                 ]
             }
@@ -1691,6 +2041,7 @@
     },
     "NIL-15": {
         "id": "NIL-15",
+        "qty": "1",
         "addr": "36501 Niles Blvd",
         "name": "Japanese Zelkova",
         "spec": "Zelkova serrata",
@@ -1701,7 +2052,7 @@
         "dbh": "4'3\"",
         "nativeRange": "Japan",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "The Sawleaf Zelkova, also known as the Japanese Zelkova, is a deciduous tree native to Japan. It has wide spreading branches and a colorful display of yellow to dark red leaves before they drop. Just as its name suggests, the margins of its leaves are serrated.\\nThis zelkova is located behind the Lander's House in the California Nursery. It provides a bountiful amount of shade when its leaves are apparent.",
         "caption": "The Sawleaf Zelkova displaying its colorful leaves in the fall.",
         "trees": [
@@ -1717,6 +2068,7 @@
     },
     "NIL-16": {
         "id": "NIL-16",
+        "qty": "1",
         "addr": "36501 Niles Blvd",
         "name": "Canary Island Juniper Pine",
         "spec": "Juniperus Cedrus",
@@ -1727,7 +2079,7 @@
         "dbh": "1'8\"",
         "nativeRange": "Western Canary Islands",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "This landmark Canary Islands Juniper Pine can be found in the parking lot of the California Nursery. This tree is special because, according to the International Union for Conservation of Nature and Natural Resources, it is an endangered species due to over-grazing, deforestation and fires. Therefore, its rarity is an outstanding trait for a landmark tree. According to the IUCN Red List of Threatened Species, there are about 572 trees remaining on the Canary Islands (Spain) and 40 trees remaining in Madeira (Portugal).",
         "caption": "Close-up detail of the bark of a Canary Island Juniper Pine.",
         "trees": [
@@ -1743,6 +2095,7 @@
     },
     "NIL-17": {
         "id": "NIL-17",
+        "qty": "1",
         "addr": "36501 Niles Blvd",
         "name": "Queensland Kauri Pine",
         "spec": "Agathis robusta",
@@ -1753,7 +2106,7 @@
         "dbh": "1'0\"",
         "nativeRange": "Eastern Queensland, Australia",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "The Queensland Kauri Pine is located in the California Nursery and is a rare specimen in the Bay Area. There are only two populations in its native Queensland where these trees are extensively found. This tree is characterized by a multicolored peeling bark and a very straight trunk. According to Gold Coast Nursery, its leaves are 2-5 cm wide and 5-12 cm long. In the past, the Queensland Kauri Pine was extensively logged for its high quality soft wood.",
         "caption": "Close-up detail of the peeling bark of a Queensland Kauri Pine.",
         "trees": [
@@ -1767,8 +2120,36 @@
             }
         ]
     },
+    "NIL-18": {
+        "id": "NIL-18",
+        "qty": "multiple",
+        "addr": "36501 Niles Blvd",
+        "name": "Canary Island Date Palm",
+        "spec": "Phoenix canariensis",
+        "page": 87,
+        "isNotable": false,
+        "height": "60",
+        "spread": "35",
+        "dbh": "3'8\"",
+        "nativeRange": "Canary Islands",
+        "lmDate": "6/19/2012",
+        "photoDate": "May-12",
+        "desc": "These Canary Island Date Palms exemplify old age and were planted when the California Nursery Company thrived under John Rock and the Roeding Family in the late 1880s to late 1900s. Many of these palms are single-trunked, but a few multi-trunked specimens are amongst the set.\\nA row of 19 landmark palm trees are located near the Lander's House and another set of 7 are located at the entrance to the California Nursery.",
+        "caption": "Canary Island Palms at the entrance of the California Nursery",
+        "trees": [
+            {
+                "id": "NIL-18",
+                "pid": "",
+                "coordinates": [
+                    "-121.988616",
+                    "37.578435"
+                ]
+            }
+        ]
+    },
     "NIL-19": {
         "id": "NIL-19",
+        "qty": "3",
         "addr": "470 School St",
         "name": "Bald Cypress",
         "spec": "Taxodium distichum",
@@ -1779,7 +2160,7 @@
         "dbh": "3'0\"",
         "nativeRange": "Southeastern United States",
         "lmDate": "6/19/2012",
-        "photoDate": "11-Feb",
+        "photoDate": "Feb-11",
         "desc": "The Bald Cypress is a deciduous tree native to southeastern United States. It is tolerant of both wet and dry soils. When Bald Cypresses flourish in swampy conditions, the tree produces buttressed roots and knobby growth called knees. It has long, narrow leaves that are yellow-green in color.\\nThese three Bald Cypresses are found in the Grau Pond at the end of School Street. They are a spectacular sight as they are the only few trees in Fremont that are growing in such a moist environment.",
         "caption": "Southeastern United States",
         "trees": [
@@ -1811,6 +2192,7 @@
     },
     "NIL-21": {
         "id": "NIL-21",
+        "qty": "1",
         "addr": "36501 Niles Blvd",
         "name": "Senegal Date Palm",
         "spec": "Phoenix reclinata",
@@ -1821,7 +2203,7 @@
         "dbh": "1'5\"",
         "nativeRange": "Africa",
         "lmDate": "6/19/2012",
-        "photoDate": "12-May",
+        "photoDate": "May-12",
         "desc": "The Phoenix reclinata is on the Register of California Big Trees. According to the Western Sunset Western Garden Book, the Senegal Date Palm can grow up to 30 feet. However, this specimen located in the California Nursery is 54 feet tall. The Senegal Date Palm produces offshoots, which allows it to regenerate quickly.\\nThis landmark specimen is located towards the rear of the nursery near the landmark Monterey Cypresses.",
         "caption": "View of the multi-trunk structure of the Senegal Date Palm.",
         "trees": [
@@ -1829,14 +2211,15 @@
                 "id": "NIL-21",
                 "pid": "80362",
                 "coordinates": [
-                    "-121.9909",
-                    "37.57775"
+                    "-121.990900",
+                    "37.577750"
                 ]
             }
         ]
     },
     "NFR-1": {
         "id": "NFR-1",
+        "qty": "1",
         "addr": "34600 Ardenwood Blvd",
         "name": "Bur Oak",
         "spec": "Quercus macrocarpa",
@@ -1847,7 +2230,7 @@
         "dbh": "4'7\"",
         "nativeRange": "Eastern United States",
         "lmDate": "6/19/2012",
-        "photoDate": "12-May",
+        "photoDate": "May-12",
         "desc": "The Bur Oak, also known as the Mossycup Oak, is a deciduous tree native to eastern United States. It features flaky grayish-brown bark, and glossy leaves containing 5-7 rounded lobes.\\nThe landmark Bur Oak is located in the Ardenwood Historical Farm. It has a short leader with two very prominent primary branches. At the time of landmark in June 2012, it was located near an abadoned house on stilts.\\nJuly 2024 Update: One of the two main branches of this tree broke off in 2017, significantly diminishing its canopy cover.",
         "caption": "Lobed leaves of the Bur Oak. The leaves can grow 8-10 inches long.",
         "trees": [
@@ -1861,8 +2244,144 @@
             }
         ]
     },
+    "SFR-1": {
+        "id": "SFR-1",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Italian Stone Pine",
+        "spec": "Pinus pinea",
+        "page": 100,
+        "isNotable": false,
+        "height": "55",
+        "spread": "50",
+        "dbh": "4'2\"",
+        "nativeRange": "Mediterranean region",
+        "lmDate": "6/19/2012",
+        "photoDate": "Jan-11",
+        "desc": "These landmark Italian Stone Pines provide a significant contrast to the concrete facades of the industrial area. They shade cars and create a notable identity in the industrial district.\\nThe Italian Stone Pine is a conifer native to the Mediterranean area. This pine tree has a sturdy trunk and heavy branches that form an umbrella-like crown. It also has dark green needles and cone that grow up to three to five inches.",
+        "caption": "View of the two rows of Italian Stone Pines.",
+        "trees": [
+            {
+                "id": "SFR-1",
+                "pid": "",
+                "coordinates": [
+                    "-121.962195",
+                    "37.505979"
+                ]
+            }
+        ]
+    },
+    "WMS-1": {
+        "id": "WMS-1",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Olive",
+        "spec": "Olea europaea",
+        "page": 103,
+        "isNotable": false,
+        "height": "31",
+        "spread": "",
+        "dbh": "1'6\"",
+        "nativeRange": "Mediterranean region",
+        "lmDate": "3/17/1972",
+        "photoDate": "Oct-10",
+        "desc": "The landmark Olives are located above the banks of the Aqua Caliente Creek.\\nOlives are broadleaf evergreen trees native to the Mediterranean region where they can live to be 1000 years old. They were brought from the Mediterranean to Mission gardens by Franciscan fathers for oil and ornamental use.[14]",
+        "caption": "Cluster of Olives.",
+        "trees": [
+            {
+                "id": "WMS-1",
+                "pid": "",
+                "coordinates": [
+                    "-121.910967",
+                    "37.503544"
+                ]
+            }
+        ]
+    },
+    "WMS-2": {
+        "id": "WMS-2",
+        "qty": "multiple",
+        "addr": "",
+        "name": "California Sycamore",
+        "spec": "Platanus racemosa",
+        "page": 104,
+        "isNotable": false,
+        "height": "58",
+        "spread": "",
+        "dbh": "",
+        "nativeRange": "California",
+        "lmDate": "3/17/1972",
+        "photoDate": "Oct-10",
+        "desc": "These landmark trees located in Hidden Valley Terrace can be easily spotted by their distinct maple-like foliage and majestic canopies.\\nThe California Sycamore is a deciduous tree native to California. They thrive along streams, foothills and the Coast Range. The California Sycamore has a sturdy trunk that divides into secondary branches and yellowish green, palmately lobed leaves.[7]",
+        "caption": "Trunk and branch detail; located on bank slope.",
+        "trees": [
+            {
+                "id": "WMS-2",
+                "pid": "",
+                "coordinates": [
+                    "-121.910294",
+                    "37.503172"
+                ]
+            }
+        ]
+    },
+    "WMS-3": {
+        "id": "WMS-3",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Coast Live Oak",
+        "spec": "Quercus agrifolia ",
+        "page": 105,
+        "isNotable": false,
+        "height": "52",
+        "spread": "",
+        "dbh": "4'0\"",
+        "nativeRange": "California coast",
+        "lmDate": "3/17/1972",
+        "photoDate": "Oct-10",
+        "desc": "The Coast Live Oaks are located throughout Hidden Valley Terrace along the banks of the Agua Caliente Creek. They are hidden amongst other landmark trees and heavy brush.\\nThe Coast Live Oak is a broadleaf evergreen tree native to the California coastal ranges. It is known for its highly picturesque silhouette, assuming many artistic shapes. The trunk is often divided at ground level. It has semi-glossy, dark green leaves with spiny margins.[7]",
+        "caption": "Branching pattern.",
+        "trees": [
+            {
+                "id": "WMS-3",
+                "pid": "",
+                "coordinates": [
+                    "-121.911455",
+                    "37.503360"
+                ]
+            }
+        ]
+    },
+    "WMS-4": {
+        "id": "WMS-4",
+        "qty": "multiple",
+        "addr": "",
+        "name": "Blue Gum",
+        "spec": "Eucalyptus globulus",
+        "page": 107,
+        "isNotable": false,
+        "height": "70",
+        "spread": "50",
+        "dbh": "8'3\"",
+        "nativeRange": "Australia",
+        "lmDate": "3/17/1972",
+        "photoDate": "Jun-10",
+        "desc": "These landmark Eucalyptus trees are located along Stanford Avenue above the banks of the Aqua Caliente Creek. The Blue Gums' towering height and unique trunks create a breathtaking entry way to Mission Peak, and are often seen being photographed by passersby.\\nThe Blue gum a broadleaf evergreen tree known to be among one of the fastest growing trees in the world.[13]",
+        "caption": "Peeling bark detail.",
+        "trees": [
+            {
+                "id": "WMS-4",
+                "pid": "",
+                "coordinates": [
+                    "-121.913195",
+                    "37.502927"
+                ]
+            }
+        ]
+    },
     "WMS-5": {
         "id": "WMS-5",
+        "qty": "1",
         "addr": "46644 Rancho Higuera Rd",
         "name": "California Sycamore",
         "spec": "Platanus racemosa",
@@ -1873,7 +2392,7 @@
         "dbh": "11'0\"",
         "nativeRange": "California",
         "lmDate": "6/19/2012",
-        "photoDate": "10-Aug",
+        "photoDate": "Aug-10",
         "desc": "This California Sycamore is the largest species of its kind found in Fremont, and is located on its own 26-acre City owned lot. It is one of the neighborhood's most prominent features because of its wide-spreading branches and unique branch formations. The tree was nominated for State Champion status, but lost to a slightly larger sycamore in Sacramento. On June 21, 2012, two days after Council placed this tree on the landmark list, a major branch failure occurred at the southwest portion of the tree. As a result, the tree lost its large, low-drooping branch structure as shown in the photos above.",
         "caption": "Uniquely grotesque branching pattern.",
         "trees": [

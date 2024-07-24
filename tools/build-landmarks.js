@@ -39,6 +39,7 @@ fetch('data/raw/Landmarks.csv')
         if (row[0].length > 0) {  // new ID signals start of new landmark entry (which can contain one or more trees)
             let entry = {
                 id: row[0],
+                qty: row[2],
                 addr: row[3],
                 name: row[4],
                 spec: row[5],
@@ -77,6 +78,11 @@ fetch('data/raw/Landmarks.csv')
         const landmark = json[id];
         for (let i in landmark.trees) {
             const tree = landmark.trees[i];
+
+            let type = 'normal';
+            if (landmark.qty === 'multiple') type = 'multiple';
+            if (landmark.isNotable) type = 'notable';
+
             geojson.features.push({  // create a new feature for each individual tree
                 type: 'Feature',
                 geometry: {type: 'Point', coordinates: tree.coordinates},
@@ -87,7 +93,7 @@ fetch('data/raw/Landmarks.csv')
                     name: landmark.name,
                     spec: landmark.spec,
                     page: landmark.page,
-                    isNotable: landmark.isNotable
+                    type: type
                 },
                 id: uid++
             });

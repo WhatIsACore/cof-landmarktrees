@@ -46,7 +46,6 @@ document, body {
     padding: 3px 5px;
     box-shadow: none;
     font-weight: 600;
-    text-transform: capitalize;
 }
 .tooltip.landmark .maplibregl-popup-content {
     padding-right: 28px;
