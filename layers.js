@@ -200,6 +200,36 @@ const LAYERDATA = {
             }
         }
     },
+    FeatureLabels: {
+        source: 'FeatureLabels.pbf',
+        options: {
+            type: 'symbol',
+            minzoom: 14,
+            maxzoom: 21,
+            layout: {
+                'text-field': ['get', 'name'],
+                'text-font': ['Noto Sans Bold'],
+                'text-size': [
+                    'interpolate', ['exponential', 1.5], ['zoom'],
+                    14, 10,
+                    21, 36
+                ],
+                'text-variable-anchor': ['center', 'top', 'bottom', 'left', 'right'],
+                'text-radial-offset': 1,
+                'text-justify': 'auto'
+            },
+            paint: {
+                'text-color': 'rgb(88, 124, 55)',
+                'text-halo-color': 'rgba(255, 255, 250, 0.5)',
+                'text-halo-width': 2,
+                'text-opacity': [
+                    'interpolate', ['linear'], ['zoom'],
+                    14, 0,
+                    15, 1
+                ],
+            }
+        }
+    },
     ParkLabels: {
         source: 'ParkLabels.pbf',
         options: {
@@ -230,34 +260,6 @@ const LAYERDATA = {
             }
         }
     },
-    // DistrictLabels: {
-    //     source: 'DistrictLabels.pbf',
-    //     options: {
-    //         type: 'symbol',
-    //         minzoom: 12,
-    //         maxzoom: 15,
-    //         layout: {
-    //             'text-field': ['get', 'name'],
-    //             'text-font': ['Noto Sans Bold'],
-    //             'text-size': [
-    //                 'interpolate', ['exponential', 2], ['zoom'],
-    //                 12, 14,
-    //                 15, 24
-    //             ]
-    //         },
-    //         paint: {
-    //             'text-color': 'rgba(40, 70, 0, 0.7)',
-    //             'text-halo-color': 'rgba(255, 255, 250, 0.5)',
-    //             'text-halo-width': 2,
-    //             'text-halo-blur': 1,
-    //             'text-opacity': [
-    //                 'interpolate', ['linear'], ['zoom'],
-    //                 13, 1,
-    //                 15, 0
-    //             ]
-    //         }
-    //     }
-    // },
     Landmarks: {
         source: 'Landmarks.pbf',
         images: [

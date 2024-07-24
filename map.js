@@ -288,16 +288,29 @@ function displayLandmarkCard(id) {
     }).join('');
 
     // build photos
+    const caption = data.caption.replace(/\s(?!\S*\s)/, '&nbsp;');
     $('#card-photos').innerHTML = `
-        <div class='card-photo' style='--photo-src: url(landmarks/photos/${id}_L.jpg)'></div>
-        <div class='card-photo' style='--photo-src: url(landmarks/photos/${id}_S.jpg)'></div>
+        <div class='card-photo' style='--photo-src: url(landmarks/photos/${id}_L.jpg)' data-src='landmarks/photos/${id}_L.jpg'></div>
+        <div class='card-photo captioned' style='--photo-src: url(landmarks/photos/${id}_S.jpg)' data-src='landmarks/photos/${id}_S.jpg' data-caption="${caption}"></div>
     `;
+    // add click events
+    $$('.card-photo').forEach(x => x.addEventListener('click', e => displayPhoto(e.currentTarget)));
 
     currentLandmark = id;
     currentCard = $('#landmark-card');
     $('#landmark-card').style.display = 'flex';
     $('#landmark-card .card-content').scrollTo(0, 0);
 }
+
+// create a full-view photo from a card-photo element
+function displayPhoto(target) {
+    $('#photo-modal').style.display = 'block';
+    $('#photo-detail').innerHTML = `<img src='${target.dataset.src}'>`;
+}
+function closePhoto() {
+    $('#photo-modal').style.display = 'none';
+}
+$('#photo-modal .modal-backdrop').addEventListener('click', closePhoto);
 
 // show data attributions
 function displayAttributions() {
