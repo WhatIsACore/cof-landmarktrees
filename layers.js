@@ -68,6 +68,7 @@ const LAYERDATA = {
                     'interpolate', ['exponential', 1.5], ['zoom'],
                         12, [
                             'match', ['get', 'CLASS'],
+                                'FWY', 2,
                                 'PWY', 2,
                                 'ART', 2,
                                 'COL', 1,
@@ -75,6 +76,7 @@ const LAYERDATA = {
                         ],
                         19, [
                             'match', ['get', 'CLASS'],
+                                'FWY', 28,
                                 'PWY', 24,
                                 'ART', 24,
                                 'COL', 16,
@@ -153,6 +155,7 @@ const LAYERDATA = {
                     13, 10,
                     17, [
                         'match', ['get', 'CLASS'],
+                            'FWY', 15,
                             'PWY', 15,
                             'ART', 15,
                             'COL', 13,
@@ -160,6 +163,7 @@ const LAYERDATA = {
                     ],
                     21, [
                         'match', ['get', 'CLASS'],
+                            'FWY', 32,
                             'PWY', 28,
                             'ART', 28,
                             'COL', 24,
@@ -178,18 +182,21 @@ const LAYERDATA = {
                     14, 0,
                     15, [
                         'match', ['get', 'CLASS'],
+                            'FWY', 1,
                             'PWY', 1,
                             'ART', 1,
                             0
                     ],
                     15.5, [
                         'match', ['get', 'CLASS'],
+                            'FWY', 1,
                             'PWY', 1,
                             'ART', 1,
                             0
                     ],
                     16.5, [
                         'match', ['get', 'CLASS'],
+                            'FWY', 1,
                             'PWY', 1,
                             'ART', 1,
                             'COL', 1,
@@ -289,13 +296,13 @@ const LAYERDATA = {
                     14, [
                         'match', ['get', 'type'],
                             'notable', 0.1,
-                            'multiple', 0.08,
+                            'multiple', 0.07,
                             0.08
                     ],
                     21, [
                         'match', ['get', 'type'],
                             'notable', 0.25,
-                            'multiple', 0.2,
+                            'multiple', 0.18,
                             0.2
                     ],
                 ],

@@ -33,7 +33,8 @@ fetch('data/raw/Trees.csv')
             properties: {
                 addr: row[1],
                 name: row[2],
-                spec: row[3]
+                spec: row[3],
+                dbh: row[4]
             },
             geometry: {
                 type: 'Point',
