@@ -1,5 +1,6 @@
 :root {
     --color-light: #fffffa;
+    --color-grey: #f0eee6;
     --color-shadow: #ecf2e6;
     --color-dark: #0f0800;
     --color-primary: #c8d8c0;
@@ -164,6 +165,34 @@ document, body {
 .card .card-close:hover {
     opacity: 1;
 }
+.card .card-header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-grey);
+    padding: 15px;
+}
+.card .card-header .header-left {
+    flex-grow: 1;
+}
+.card .card-header .header-right {
+    text-align: right;
+}
+.card .card-spec {
+    font-size: 20px;
+    font-style: italic;
+}
+.card .card-name {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.card .card-addr {
+    font-size: 20px;
+}
+.card .card-district {
+    font-size: 20px;
+}
 .card .card-divider {
     margin: 15px 0;
     border-bottom: 1px solid var(--color-dark);
@@ -184,7 +213,25 @@ document, body {
     margin-block-end: 0;
     margin-bottom: 8px;
 }
+.card .card-body {
+    background-color: var(--color-grey);
+    padding: 15px;
+    margin: 10px 0;
+}
+.card .card-desc {
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+}
+.card .card-desc p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card .card-desc p:last-child {
+    margin-bottom: 0;
+}
 .card .card-footer {
+    margin-top: 10px;
     font-size: 13px;
 }
 .card .card-footer a {
@@ -197,44 +244,20 @@ document, body {
 }
 
 
-#landmark-card #card-id {
-    font-weight: 700;
-}
-#landmark-card .card-header {
-    display: flex;
-    flex-direction: row;
+#landmark-card .card-header, #landmark-card .card-body {
     background-color: var(--color-shadow);
-    padding: 15px;
 }
-#landmark-card .card-header .header-left {
-    flex-grow: 1;
-}
-#landmark-card .card-header .header-right {
-    text-align: right;
-}
-#landmark-card #card-spec {
-    font-size: 20px;
-    font-style: italic;
-}
-#landmark-card #card-name {
-    position: relative;
-    font-size: 20px;
+#landmark-card .card-id {
     font-weight: 700;
 }
-#landmark-card #card-name.landmark::after {
+#landmark-card .card-name::after {
     display: inline-block;
     position: absolute;
     margin-left: 8px;
     content: url("assets/landmark-vector.svg");
     width: 18px;
 }
-#landmark-card #card-addr {
-    font-size: 20px;
-}
-#landmark-card #card-district {
-    font-size: 20px;
-}
-#landmark-card #card-photos {
+#landmark-card .card-photos {
     display: flex;
     flex-direction: row;
     margin: 15px 0;
@@ -279,11 +302,6 @@ document, body {
     opacity: 1;
 }
 
-#landmark-card .card-body {
-    background-color: var(--color-shadow);
-    padding: 15px;
-    margin-bottom: 10px;
-}
 #landmark-card .card-table {
     margin-bottom: 15px;
 }
@@ -323,18 +341,6 @@ document, body {
 }
 #landmark-card .card-table-left .card-table-label {
     width: 4.5em;
-}
-#landmark-card #card-desc {
-    font-size: 16px;
-    line-height: 23px;
-    font-weight: 400;
-}
-#landmark-card #card-desc p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#landmark-card #card-desc p:last-child {
-    margin-bottom: 0;
 }
 #landmark-card .card-footer {
     text-align: right;

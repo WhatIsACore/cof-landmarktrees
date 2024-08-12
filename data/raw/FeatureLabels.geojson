@@ -470,6 +470,36 @@
                 "type": "Point",
                 "coordinates": [-121.985648, 37.546742]
             }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Buena Vista Park"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.945093, 37.555505]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Plomosa Park"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.910422, 37.468587]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Rancho Higuera Historical Park"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-121.904906, 37.491032]
+            }
         }
     ]
 }

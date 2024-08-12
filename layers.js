@@ -121,6 +121,10 @@ const LAYERDATA = {
                         'case', ['boolean', ['feature-state', 'hover'], false],
                         1, 0
                     ],
+                    15, [
+                        'case', ['boolean', ['feature-state', 'hover'], false],
+                        1, 0.3
+                    ],
                     19, [
                         'case', ['boolean', ['feature-state', 'hover'], false],
                         1, 0.7

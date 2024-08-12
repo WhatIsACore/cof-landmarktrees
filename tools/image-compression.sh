@@ -1,0 +1,1 @@
+magick mogrify -strip -resize 1048576@ -interlace Plane -sampling-factor 4:2:0 -define jpeg:dct-method=float -quality 70% *image*.jpg

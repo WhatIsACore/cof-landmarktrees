@@ -167,6 +167,10 @@ map.on('load', () => {
 
 
     // click events
+    map.on('click', 'Trees', e => {
+        const tree = e.features[0];
+        displayStreetTreeCard(tree);
+    });
     map.on('click', 'Landmarks', e => {
         const id = e.features[0].properties.id;
         displayLandmarkCard(id);
@@ -174,7 +178,7 @@ map.on('load', () => {
         const rightPad = (window.innerWidth - currentCard.getBoundingClientRect().left) * 0.5;
         map.flyTo({
             center: e.features[0].geometry.coordinates,
-            zoom: map.getZoom() > 16 ? map.getZoom() : 16,
+            zoom: map.getZoom() > 15 ? map.getZoom() : 15,
             speed: 0.5,
             padding: {right: rightPad},  // center accounting for card
             essential: true
@@ -250,14 +254,45 @@ $('#search').addEventListener('keyup', e => {
     if (e.keyCode === 13) findAddress();
 });
 
+let currentCard;
 function closeCard() {
+    currentStreetTree = null;
     currentLandmark = null;
     if (currentCard != null) currentCard.style.display = 'none';
 }
 $$('.card-close').forEach(e => e.addEventListener('click', closeCard));
 
+// display a street tree card
+let currentStreetTree;
+function displayStreetTreeCard(tree) {
+    if (currentStreetTree && currentStreetTree.id === tree.id) return;
+    closeCard();
+
+    $('#street-tree-card .card-id').innerHTML = tree.id;
+    $('#street-tree-card .card-name').innerHTML = tree.properties.name;
+    $('#street-tree-card .card-spec').innerHTML = tree.properties.spec;
+    $('#street-tree-card .card-addr').innerHTML = tree.properties.addr;
+
+    currentStreetTree = tree;
+    currentCard = $('#street-tree-card');
+    $('#street-tree-card').style.display = 'flex';
+    $('#street-tree-card .card-content').scrollTo(0, 0);
+}
+
+// query and cache species information from trefle
+const speciesCache = {};
+const TOKEN = "T2JYdDZya05TM05oWlBMY29MWXlDY0ZOSFNTaGRwN1NWenByLW50Mnh1QQ";  // TODO: not secure! move to server side if a node environment becomes possible
+async function querySpecies(spec) {
+    const params = new URLSearchParams({
+        token: atob(TOKEN)
+    });
+    const trefleData = await fetch(`https://trefle.io/api/v1/species/${spec}?${params}`);
+    const json = await trefleData.json();
+    return json;
+}
+
 // display a landmark tree card
-let currentLandmark, currentCard;
+let currentLandmark;
 const districts = {
     CEN: 'Centerville',
     CRL: 'Central',
@@ -273,32 +308,32 @@ function displayLandmarkCard(id) {
     closeCard();
 
     const data = landmarkData[id];
-    $('#card-id').innerHTML = data.id;
-    $('#card-name').innerHTML = data.name;
-    $('#card-spec').innerHTML = data.spec;
-    $('#card-addr').innerHTML = data.addr;
-    $('#card-district').innerHTML = districts[data.id.split('-')[0]];
-    $('#card-height').innerHTML = `${data.height} ft.`;
-    $('#card-qty').innerHTML = data.qty;
-    $('#card-spread').innerHTML = `${data.spread} ft.`;
-    $('#card-nativeRange').innerHTML = data.nativeRange;
-    $('#card-dbh').innerHTML = data.dbh;
-    $('#card-lmDate').innerHTML = new Date(data.lmDate).toLocaleString(...localeOptions);
+    $('#landmark-card .card-id').innerHTML = data.id;
+    $('#landmark-card .card-name').innerHTML = data.name;
+    $('#landmark-card .card-spec').innerHTML = data.spec;
+    $('#landmark-card .card-addr').innerHTML = data.addr;
+    $('#landmark-card .card-district').innerHTML = districts[data.id.split('-')[0]] + ' District';
+    $('#landmark-card .card-height').innerHTML = `${data.height} ft.`;
+    $('#landmark-card .card-qty').innerHTML = data.qty;
+    $('#landmark-card .card-spread').innerHTML = `${data.spread} ft.`;
+    $('#landmark-card .card-nativeRange').innerHTML = data.nativeRange;
+    $('#landmark-card .card-dbh').innerHTML = data.dbh;
+    $('#landmark-card .card-lmDate').innerHTML = new Date(data.lmDate).toLocaleString(...localeOptions);
 
     // process description
-    $('#card-desc').innerHTML = data.desc.split('\\n').map(p => {
+    $('#landmark-card .card-desc').innerHTML = data.desc.split('\\n').map(p => {
         p = p.replaceAll('[', '<sup>[').replaceAll(']', ']</sup>');
         return `<p>${p}</p>`.replace(/\s(?!\S*\s)/, '&nbsp;'); // replaces last whitespace with nbsp to prevent orphans
     }).join('');
 
     // build photos
     const caption = data.caption.replace(/\s(?!\S*\s)/, '&nbsp;');
-    $('#card-photos').innerHTML = `
+    $('#landmark-card .card-photos').innerHTML = `
         <div class='card-photo' style='--photo-src: url(landmarks/photos/${id}_L.jpg)' data-src='landmarks/photos/${id}_L.jpg'></div>
         <div class='card-photo captioned' style='--photo-src: url(landmarks/photos/${id}_S.jpg)' data-src='landmarks/photos/${id}_S.jpg' data-caption="${caption}"></div>
     `;
     // add click events
-    $$('.card-photo').forEach(x => x.addEventListener('click', e => displayPhoto(e.currentTarget)));
+    $$('#landmark-card .card-photo').forEach(x => x.addEventListener('click', e => displayPhoto(e.currentTarget)));
 
     currentLandmark = id;
     currentCard = $('#landmark-card');
