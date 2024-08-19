@@ -36,18 +36,36 @@ const map = new GL.Map({
 
 const LAYERS = Object.keys(LAYERDATA);
 let landmarkData;
-let targetTree, targetLandmark;  // track currently targeted (hovered) tree for actions
+
+// fetch source data, extract from pbf, add to map
+async function fetchSourceData(source) {
+    let blob = await fetch(`data/${source}`);
+    blob = await blob.arrayBuffer();
+    const json = await geobuf.decode(new Pbf(blob));
+
+    map.addSource(source, {
+        type: 'geojson',
+        data: json
+    });
+}
 
 map.on('load', () => {
+
+    assignMapListeners();
 
     // load landmark tree information
     fetch('landmarks/landmarkData.json').then(res => res.json()).then(json => landmarkData = json);
 
     // load in sources and create layers in order asynchronously
+    const sourcePromises = {};
     LAYERS.forEach(async name => {
         const data = LAYERDATA[name];
+        const layer = {
+            id: name,
+            ...data.options
+        };
 
-        if (data.images != null)  // if images, load them first
+        if (data.images)  // if images, load them first
             await Promise.all(
                 data.images.map(i =>
                     new Promise(async resolve => {
@@ -58,58 +76,45 @@ map.on('load', () => {
                 )
             );
 
-        if (data.source != null) {  // if geojson source, asynchronously fetch data first
-            fetchSourceData(`data/${data.source}`)
-            .then(json => {
-                data.loaded = true;
-
-                // create the source using obtained geojson
-                map.addSource(name, {
-                    type: 'geojson',
-                    data: json
-                });
-
-                // determine the next loaded layer to maintain proper ordering
-                let nextLoadedLayer = null;
-                for (let i = LAYERS.indexOf(name) + 1; i < LAYERS.length; i++) {
-                    let layerName = LAYERS[i];
-                    if (LAYERDATA[layerName].loaded) {
-                        nextLoadedLayer = layerName;
-                        break;
-                    }
-                }
-
-                map.addLayer({
-                    id: name,
-                    source: name,
-                    ...data.options
-                }, nextLoadedLayer);
-            });
-        } else {  // if non-geojson source, add layer directly
-            data.loaded = true;
-            map.addLayer({
-                id: name,
-                source: name,
-                ...data.options
-            });
+        if (data.source) {
+            if (!sourcePromises[data.source])  // load the source if it hasn't already been requested
+                sourcePromises[data.source] = fetchSourceData(data.source);
+            
+            await sourcePromises[data.source];  // wait for source to be fully loaded
+            layer.source = data.source;
         }
-    });
 
+        // determine the next loaded layer to maintain proper ordering
+        let nextLoadedLayer = null;
+        for (let i = LAYERS.indexOf(name) + 1; i < LAYERS.length; i++) {
+            let name = LAYERS[i];
+            if (map.getLayer(name)) {
+                nextLoadedLayer = name;
+                break;
+            }
+        }
+
+        map.addLayer(layer, nextLoadedLayer);
+    });
+});
+
+let targetTree, targetLandmark;  // track currently targeted (hovered) tree for actions
+function assignMapListeners() {
     // tree hover interactions
     map.on('mousemove', 'Trees', e => {
         if (e.features.length == 0) return;
 
         map.getCanvas().style.cursor = 'pointer';
 
-        if (targetTree != null)  // remove hover from previous tree
+        if (targetTree)  // remove hover from previous tree
             map.setFeatureState(
-                { source: 'Trees', id: targetTree.id },
+                { source: 'Trees.pbf', id: targetTree.id },
                 { hover: false }
             );
 
         targetTree = e.features[0];
         map.setFeatureState(
-            { source: 'Trees', id: targetTree.id },
+            { source: 'Trees.pbf', id: targetTree.id },
             { hover: true }
         );
         let name = targetTree.properties.name.length > 0 ?
@@ -120,9 +125,9 @@ map.on('load', () => {
 
     map.on('mouseleave', 'Trees', e => {
         map.getCanvas().style.cursor = 'default';
-        if (targetTree != null)
+        if (targetTree)
             map.setFeatureState(
-                { source: 'Trees', id: targetTree.id },
+                { source: 'Trees.pbf', id: targetTree.id },
                 { hover: false }
             );
         targetTree = null;
@@ -133,20 +138,20 @@ map.on('load', () => {
         if (e.features.length == 0) return;
         map.getCanvas().style.cursor = 'pointer';
 
-        if (targetLandmark != null)  // remove hover from previous tree
+        if (targetLandmark)  // remove hover from previous tree
             map.setFeatureState(
-                { source: 'Landmarks', id: targetLandmark.id },
+                { source: 'Landmarks.pbf', id: targetLandmark.id },
                 { hover: false }
             );
-        if (targetTree != null)  // override street tree hover
+        if (targetTree)  // override street tree hover
             map.setFeatureState(
-                { source: 'Trees', id: targetTree.id },
+                { source: 'Trees.pbf', id: targetTree.id },
                 { hover: false }
             );
 
         targetLandmark = e.features[0];
         map.setFeatureState(
-            { source: 'Landmarks', id: targetLandmark.id },
+            { source: 'Landmarks.pbf', id: targetLandmark.id },
             { hover: true }
         );
         let name = targetLandmark.properties.name;
@@ -156,9 +161,9 @@ map.on('load', () => {
 
     map.on('mouseleave', 'Landmarks', e => {
         map.getCanvas().style.cursor = 'default';
-        if (targetLandmark != null)
+        if (targetLandmark)
             map.setFeatureState(
-                { source: 'Landmarks', id: targetLandmark.id },
+                { source: 'Landmarks.pbf', id: targetLandmark.id },
                 { hover: false }
             );
             targetLandmark = null;
@@ -184,21 +189,6 @@ map.on('load', () => {
             essential: true
         });
     });
-});
-
-
-// fetch layer data and extract from pbf
-const sourceCache = {};
-async function fetchSourceData(source) {
-    if (sourceCache[source] != null)
-        return sourceCache[source];
-
-    let blob = await fetch(source);
-    blob = await blob.arrayBuffer();
-    const data = await geobuf.decode(new Pbf(blob));
-
-    sourceCache[source] = data;
-    return data;
 }
 
 
@@ -212,7 +202,7 @@ const tooltip = new GL.Popup({
     maxWidth: 'none'
 });
 function setTooltip(coords, text, isLandmark) {
-    if (coords == null)  // clear tooltip
+    if (!coords)  // clear tooltip
         return tooltip.remove();
 
     const scale = map.getZoom() / 21;
@@ -258,7 +248,7 @@ let currentCard;
 function closeCard() {
     currentStreetTree = null;
     currentLandmark = null;
-    if (currentCard != null) currentCard.style.display = 'none';
+    if (currentCard) currentCard.style.display = 'none';
 }
 $$('.card-close').forEach(e => e.addEventListener('click', closeCard));
 
@@ -277,18 +267,6 @@ function displayStreetTreeCard(tree) {
     currentCard = $('#street-tree-card');
     $('#street-tree-card').style.display = 'flex';
     $('#street-tree-card .card-content').scrollTo(0, 0);
-}
-
-// query and cache species information from trefle
-const speciesCache = {};
-const TOKEN = "T2JYdDZya05TM05oWlBMY29MWXlDY0ZOSFNTaGRwN1NWenByLW50Mnh1QQ";  // TODO: not secure! move to server side if a node environment becomes possible
-async function querySpecies(spec) {
-    const params = new URLSearchParams({
-        token: atob(TOKEN)
-    });
-    const trefleData = await fetch(`https://trefle.io/api/v1/species/${spec}?${params}`);
-    const json = await trefleData.json();
-    return json;
 }
 
 // display a landmark tree card
