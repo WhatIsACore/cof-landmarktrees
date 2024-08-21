@@ -299,15 +299,15 @@ const LAYERDATA = {
                     'interpolate', ['exponential', 1.5], ['zoom'],
                     14, [
                         'match', ['get', 'type'],
-                            'notable', 0.1,
-                            'multiple', 0.07,
-                            0.08
+                            'notable', 0.4,
+                            'multiple', 0.28,
+                            0.32
                     ],
                     21, [
                         'match', ['get', 'type'],
-                            'notable', 0.25,
-                            'multiple', 0.18,
-                            0.2
+                            'notable', 1,
+                            'multiple', 0.72,
+                            0.8
                     ],
                 ],
                 'icon-allow-overlap': true,

@@ -47,6 +47,10 @@ async function fetchSourceData(source) {
         type: 'geojson',
         data: json
     });
+
+    // delete data copy to optimize memory
+    delete map.getSource(source)._data;
+    delete map.getSource(source)._options.data;
 }
 
 map.on('load', () => {
