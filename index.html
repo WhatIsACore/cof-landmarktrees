@@ -25,249 +25,264 @@
     </head>
 
     <body>
-        <!-- maplibre container -->
-        <div id='map'></div>
-
-        <!-- overlay panes -->
-        <div id='overlays'>
-            <div id='photo-modal'>
-                <div class='modal-backdrop'></div>
-                <div class='modal-body'>
-                    <div id='photo-detail'></div>
-                </div>
+        <header>
+            <div class='left'>
+                <a href='https://www.fremont.gov/'>
+                    <img id='logo' src='assets/cof-logo.svg' type='image/svg+html'>
+                </a>
+                <div class='header-divider'></div>
+                <h1>City of Fremont Public Tree Map</h1>
             </div>
-
             <div class='right'>
+                <a class='nav-link'></a>
+            </div>
+        </header>
 
-                <div id='search-wrapper'>
-                    <span class='label'>Go to address:</span>
-                    <input id='search' type='text' placeholder='39550 Liberty St' autocomplete='off'>
-                    <div id='search-submit'>GO</div>
+        <main>
+            <!-- maplibre container -->
+            <div id='map'></div>
+
+            <!-- overlay panes -->
+            <div id='overlays'>
+                <div id='photo-modal'>
+                    <div class='modal-backdrop'></div>
+                    <div class='modal-body'>
+                        <div id='photo-detail'></div>
+                    </div>
                 </div>
 
-                <div class='card-wrapper'>
+                <div class='right'>
 
-                    <div id='street-tree-card' class='card'>
-                        <div class='card-meta'>
-                            Tree <span class='card-id'></span>
-                            <div class='card-close'>&#10006;</div>
-                        </div>
-                        <div class='card-content'>
-                            <div class='card-header'>
-                                <div class='header-left'>
-                                    <div class='card-name'></div>
-                                    <div class='card-spec'></div>
-                                </div>
-                                <div class='header-right'>
-                                    <div class='card-addr'></div>
-                                    <div class='card-district'>(Street Tree)</div>
-                                </div>
-                            </div>
-                            <div class='card-footer'>
-                                *address provided for street trees is an estimation only.
-                            </div>
-                        </div>
+                    <div id='search-wrapper'>
+                        <span class='label'>Go to address:</span>
+                        <input id='search' type='text' placeholder='39550 Liberty St' autocomplete='off'>
+                        <div id='search-submit'>GO</div>
                     </div>
 
-                    <div id='landmark-card' class='card'>
-                        <div class='card-meta'>
-                            <span class='card-id'></span> Landmark Tree
-                            <div class='card-close'>&#10006;</div>
-                        </div>
-                        <div class='card-content'>
-                            <div class='card-header'>
-                                <div class='header-left'>
-                                    <div class='card-name'></div>
-                                    <div class='card-spec'></div>
+                    <div class='card-wrapper'>
+
+                        <div id='street-tree-card' class='card'>
+                            <div class='card-meta'>
+                                Tree <span class='card-id'></span>
+                                <div class='card-close'>&#10006;</div>
+                            </div>
+                            <div class='card-content'>
+                                <div class='card-header'>
+                                    <div class='header-left'>
+                                        <div class='card-name'></div>
+                                        <div class='card-spec'></div>
+                                    </div>
+                                    <div class='header-right'>
+                                        <div class='card-addr'></div>
+                                        <div class='card-district'>(Street Tree)</div>
+                                    </div>
                                 </div>
-                                <div class='header-right'>
-                                    <div class='card-addr'></div>
-                                    <div class='card-district'></div>
+                                <div class='card-footer'>
+                                    *address provided for street trees is an estimation only.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id='landmark-card' class='card'>
+                            <div class='card-meta'>
+                                <span class='card-id'></span> Landmark Tree
+                                <div class='card-close'>&#10006;</div>
+                            </div>
+                            <div class='card-content'>
+                                <div class='card-header'>
+                                    <div class='header-left'>
+                                        <div class='card-name'></div>
+                                        <div class='card-spec'></div>
+                                    </div>
+                                    <div class='header-right'>
+                                        <div class='card-addr'></div>
+                                        <div class='card-district'></div>
+                                    </div>
+                                </div>
+
+                                <div class='card-photos'></div>
+
+                                <div class='card-body'>
+                                    <div class='card-table'>
+                                        <div class='card-table-row'>
+                                            <div class='card-table-left'>
+                                                <div class='card-table-label'>Height:</div>
+                                                <div class='card-table-value card-height'></div>
+                                            </div>
+                                            <div class='card-table-right'>
+                                                <div class='card-table-label'>Quantity:</div>
+                                                <div class='card-table-value card-qty'></div>
+                                            </div>
+                                        </div>
+                                        <div class='card-table-row'>
+                                            <div class='card-table-left'>
+                                                <div class='card-table-label'>Spread:</div>
+                                                <div class='card-table-value card-spread'></div>
+                                            </div>
+                                            <div class='card-table-right'>
+                                                <div class='card-table-label'>Native Range:</div>
+                                                <div class='card-table-value card-nativeRange'></div>
+                                            </div>
+                                        </div>
+                                        <div class='card-table-row'>
+                                            <div class='card-table-left'>
+                                                <div class='card-table-label'>DBH:</div>
+                                                <div class='card-table-value card-dbh'></div>
+                                            </div>
+                                            <div class='card-table-right'>
+                                                <div class='card-table-label'>Landmark Date:</div>
+                                                <div class='card-table-value card-lmDate'></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='card-desc'></div>
+                                </div>
+
+                                <div class='card-footer'>
+                                    *information recorded 2010-2012 and may not reflect current state of the tree(s).
                                 </div>
                             </div>
 
-                            <div class='card-photos'></div>
+                        </div>
 
-                            <div class='card-body'>
+                        <div id='attributions-card' class='card'>
+                            <div class='card-meta'>
+                                Attributions
+                                <div class='card-close'>&#10006;</div>
+                            </div>
+
+                            <div class='card-content'>
+                                <div class='card-divider'></div>
+
+                                <h2>Data & Geometry Sources</h2>
                                 <div class='card-table'>
                                     <div class='card-table-row'>
-                                        <div class='card-table-left'>
-                                            <div class='card-table-label'>Height:</div>
-                                            <div class='card-table-value card-height'></div>
-                                        </div>
-                                        <div class='card-table-right'>
-                                            <div class='card-table-label'>Quantity:</div>
-                                            <div class='card-table-value card-qty'></div>
+                                        <div class='card-table-label'>Tree Features:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://pg-cloud.com/FremontCA'>
+                                                City of Fremont Urban Forestry
+                                            </a>
                                         </div>
                                     </div>
                                     <div class='card-table-row'>
-                                        <div class='card-table-left'>
-                                            <div class='card-table-label'>Spread:</div>
-                                            <div class='card-table-value card-spread'></div>
-                                        </div>
-                                        <div class='card-table-right'>
-                                            <div class='card-table-label'>Native Range:</div>
-                                            <div class='card-table-value card-nativeRange'></div>
+                                        <div class='card-table-label'>Street Features:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/bdb90b3d924d45a8b8ff2f87dd83c332_0/'>
+                                                City of Fremont Open Data Hub
+                                            </a>
                                         </div>
                                     </div>
                                     <div class='card-table-row'>
-                                        <div class='card-table-left'>
-                                            <div class='card-table-label'>DBH:</div>
-                                            <div class='card-table-value card-dbh'></div>
-                                        </div>
-                                        <div class='card-table-right'>
-                                            <div class='card-table-label'>Landmark Date:</div>
-                                            <div class='card-table-value card-lmDate'></div>
+                                        <div class='card-table-label'>Building Features:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/5b4a263844634084af2001f82a5174a5_0'>
+                                                City of Fremont Open Data Hub
+                                            </a>
                                         </div>
                                     </div>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Park Features:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/92b226913b5e42de8b38b883f4bdfe95_0'>
+                                                City of Fremont Open Data Hub
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Trails & Water Bodies:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://openstreetmap.org/copyright'>
+                                                OpenStreetMap Contributors
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class='card-desc'></div>
-                            </div>
 
-                            <div class='card-footer'>
-                                *information recorded 2010-2012 and may not reflect current state of the tree(s).
+                                <h2>Application Sources</h2>
+                                <div class='card-table'>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Map Library:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://github.com/maplibre/maplibre-gl-js'>
+                                                MapLibre GL JS
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Data Compression:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://github.com/mapbox/geobuf'>
+                                                Geobuf
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Address Lookup:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://nominatim.org/'>
+                                                OpenStreetMap Nominatim
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Font:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://www.erikdkennedy.com/projects/figtree.html'>
+                                                FigTree by Erik Kennedy
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h2>2024 Project Team (City Staff)</h2>
+                                <div class='card-table'>
+                                    <div class='card-table-row inline-row'>
+                                        <span class='contributor'>Zeki Xu:</span>
+                                        Map Design & Programming, Survey
+                                    </div>
+                                    <div class='card-table-row inline-row'>
+                                        <span class='contributor'>Braeden Will:</span>
+                                        Photography, Survey
+                                    </div>
+                                </div>
+
+                                <h2>2010 Project Team (City Staff)</h2>
+                                <div class='card-table'>
+                                    <div class='card-table-row inline-row'>
+                                        <span class='contributor'>Connie Chao:</span>
+                                        Author, Photography, Desktop Publishing, Survey
+                                    </div>
+                                    <div class='card-table-row inline-row'>
+                                        <span class='contributor'>Roger Ravenstad:</span>
+                                        Editing, Staff in Charge
+                                    </div>
+                                    <div class='card-table-row inline-row'>
+                                        <span class='contributor'>Tara Bhuthimethee:</span>
+                                        Editing, Survey
+                                    </div>
+                                </div>
+
+                                <div class='card-divider'></div>
+
+                                <div class='card-footer'>
+                                    view the
+                                    <a target='_blank' href='https://www.fremont.gov/home/showpublisheddocument/1055/637751441650700000'>original publication (2010, PDF)</a>
+                                    of Fremont's landmark trees!
+                                </div>
                             </div>
                         </div>
-
+                    
                     </div>
+                </div>
 
-                    <div id='attributions-card' class='card'>
-                        <div class='card-meta'>
-                            Attributions
-                            <div class='card-close'>&#10006;</div>
-                        </div>
-
-                        <div class='card-content'>
-                            <div class='card-divider'></div>
-
-                            <h2>Data & Geometry Sources</h2>
-                            <div class='card-table'>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Tree Features:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://pg-cloud.com/FremontCA'>
-                                            City of Fremont Urban Forestry
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Street Features:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/bdb90b3d924d45a8b8ff2f87dd83c332_0/'>
-                                            City of Fremont Open Data Hub
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Building Features:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/5b4a263844634084af2001f82a5174a5_0'>
-                                            City of Fremont Open Data Hub
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Park Features:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/92b226913b5e42de8b38b883f4bdfe95_0'>
-                                            City of Fremont Open Data Hub
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Trails & Water Bodies:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://openstreetmap.org/copyright'>
-                                            OpenStreetMap Contributors
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h2>Application Sources</h2>
-                            <div class='card-table'>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Map Renderer:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://github.com/maplibre/maplibre-gl-js'>
-                                            MapLibre GL JS
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Data Compression:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://github.com/mapbox/geobuf'>
-                                            Geobuf
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Address Lookup:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://nominatim.org/'>
-                                            OpenStreetMap Nominatim
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class='card-table-row'>
-                                    <div class='card-table-label'>Font:</div>
-                                    <div class='card-table-value'>
-                                        <a target='_blank' href='https://www.erikdkennedy.com/projects/figtree.html'>
-                                            FigTree by Erik Kennedy
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <h2>2024 Project Team (City Staff)</h2>
-                            <div class='card-table'>
-                                <div class='card-table-row inline-row'>
-                                    <span class='contributor'>Zeki Xu:</span>
-                                    Map Design & Programming, Survey
-                                </div>
-                                <div class='card-table-row inline-row'>
-                                    <span class='contributor'>Braeden Will:</span>
-                                    Photography, Survey
-                                </div>
-                            </div>
-
-                            <h2>2010 Project Team (City Staff)</h2>
-                            <div class='card-table'>
-                                <div class='card-table-row inline-row'>
-                                    <span class='contributor'>Connie Chao:</span>
-                                    Author, Photography, Desktop Publishing, Survey
-                                </div>
-                                <div class='card-table-row inline-row'>
-                                    <span class='contributor'>Roger Ravenstad:</span>
-                                    Editing, Staff in Charge
-                                </div>
-                                <div class='card-table-row inline-row'>
-                                    <span class='contributor'>Tara Bhuthimethee:</span>
-                                    Editing, Survey
-                                </div>
-                            </div>
-
-                            <div class='card-divider'></div>
-
-                            <div class='card-footer'>
-                                view the
-                                <a target='_blank' href='https://www.fremont.gov/home/showpublisheddocument/1055/637751441650700000'>original publication (2010, PDF)</a>
-                                of Fremont's landmark trees!
-                            </div>
-                        </div>
+                <div class='footer'>
+                    <div></div>
+                    <div class='attributions'>
+                        City of Fremont, MapLibre, OpenStreetMap / 
+                        <span id='attributions-btn'>view credits</span>
                     </div>
-                
                 </div>
             </div>
-
-            <div class='footer'>
-                <div></div>
-                <div class='attributions'>
-                    City of Fremont, MapLibre, OpenStreetMap / 
-                    <span id='attributions-btn'>view credits</span>
-                </div>
-            </div>
-        </div>
+        </main>
     </body>
 </html>

@@ -38,7 +38,7 @@ const LAYERS = Object.keys(LAYERDATA);
 let landmarkData;
 
 // fetch source data, extract from pbf, add to map
-async function fetchSourceData(source) {
+async function addPbfSource(source) {
     let blob = await fetch(`data/${source}`);
     blob = await blob.arrayBuffer();
     const json = await geobuf.decode(new Pbf(blob));
@@ -53,40 +53,53 @@ async function fetchSourceData(source) {
     delete map.getSource(source)._options.data;
 }
 
-map.on('load', () => {
+async function loadBackgroundLayer(id, layer) {
+    return {
+        id: id,
+        ...layer.options
+    }
+}
 
+const sourcePromises = {};
+async function loadGeojsonLayer(id, layer) {
+    if (layer.images)  // if images, load them first
+    await Promise.all(
+        layer.images.map(i =>
+            new Promise(async resolve => {
+                let image = await map.loadImage(`assets/${i.source}`);
+                map.addImage(i.name, image.data);
+                resolve();
+            })
+        )
+    );
+
+    if (!sourcePromises[layer.source])  // load the source if it hasn't already been requested
+        sourcePromises[layer.source] = addPbfSource(layer.source);
+
+    await sourcePromises[layer.source];    // wait for source to be fully loaded
+
+    return {
+        id: id,
+        source: layer.source,
+        ...layer.options
+    };
+}
+
+map.on('load', () => {
     assignMapListeners();
+    loadLayers();
 
     // load landmark tree information
     fetch('landmarks/landmarkData.json').then(res => res.json()).then(json => landmarkData = json);
+});
 
+async function loadLayers() {
     // load in sources and create layers in order asynchronously
-    const sourcePromises = {};
     LAYERS.forEach(async name => {
-        const data = LAYERDATA[name];
-        const layer = {
-            id: name,
-            ...data.options
-        };
-
-        if (data.images)  // if images, load them first
-            await Promise.all(
-                data.images.map(i =>
-                    new Promise(async resolve => {
-                        let image = await map.loadImage(`assets/${i.source}`);
-                        map.addImage(i.name, image.data);
-                        resolve();
-                    })
-                )
-            );
-
-        if (data.source) {
-            if (!sourcePromises[data.source])  // load the source if it hasn't already been requested
-                sourcePromises[data.source] = fetchSourceData(data.source);
-            
-            await sourcePromises[data.source];  // wait for source to be fully loaded
-            layer.source = data.source;
-        }
+        const layerInfo = LAYERDATA[name];
+        let layer;
+        if (layerInfo.options.type === 'background') layer = await loadBackgroundLayer(name, layerInfo);
+        if (layerInfo.source) layer = await loadGeojsonLayer(name, layerInfo);
 
         // determine the next loaded layer to maintain proper ordering
         let nextLoadedLayer = null;
@@ -100,7 +113,7 @@ map.on('load', () => {
 
         map.addLayer(layer, nextLoadedLayer);
     });
-});
+}
 
 let targetTree, targetLandmark;  // track currently targeted (hovered) tree for actions
 function assignMapListeners() {
