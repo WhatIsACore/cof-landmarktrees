@@ -16,12 +16,12 @@
         <script src='https://unpkg.com/maplibre-gl@4.5.0/dist/maplibre-gl.js'></script>
 
         <!-- protobuf compression -->
-        <script src='geobuf.js'></script>
+        <script src='lib/geobuf.js'></script>
 
         <!-- application -->
         <link href='style.css' rel='stylesheet' />
-        <script src='layers.js' defer></script>
-        <script src='map.js' defer></script>
+        <script src='lib/layers.js' defer></script>
+        <script src='lib/map.js' defer></script>
     </head>
 
     <body>
@@ -154,45 +154,21 @@
                             <div class='card-content'>
                                 <div class='card-divider'></div>
 
-                                <h2>Data & Geometry Sources</h2>
+                                <h2>Data Sources</h2>
                                 <div class='card-table'>
                                     <div class='card-table-row'>
-                                        <div class='card-table-label'>Tree Features:</div>
-                                        <div class='card-table-value'>
-                                            <a target='_blank' href='https://pg-cloud.com/FremontCA'>
-                                                City of Fremont Urban Forestry
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class='card-table-row'>
-                                        <div class='card-table-label'>Street Features:</div>
-                                        <div class='card-table-value'>
-                                            <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/bdb90b3d924d45a8b8ff2f87dd83c332_0/'>
-                                                City of Fremont Open Data Hub
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class='card-table-row'>
-                                        <div class='card-table-label'>Building Features:</div>
-                                        <div class='card-table-value'>
-                                            <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/5b4a263844634084af2001f82a5174a5_0'>
-                                                City of Fremont Open Data Hub
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class='card-table-row'>
-                                        <div class='card-table-label'>Park Features:</div>
-                                        <div class='card-table-value'>
-                                            <a target='_blank' href='https://fremont-ca-open-data-cofgis.hub.arcgis.com/datasets/92b226913b5e42de8b38b883f4bdfe95_0'>
-                                                City of Fremont Open Data Hub
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class='card-table-row'>
-                                        <div class='card-table-label'>Trails & Water Bodies:</div>
+                                        <div class='card-table-label'>Map Features:</div>
                                         <div class='card-table-value'>
                                             <a target='_blank' href='https://openstreetmap.org/copyright'>
                                                 OpenStreetMap Contributors
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class='card-table-row'>
+                                        <div class='card-table-label'>Trees:</div>
+                                        <div class='card-table-value'>
+                                            <a target='_blank' href='https://pg-cloud.com/FremontCA'>
+                                                City of Fremont Urban Forestry
                                             </a>
                                         </div>
                                     </div>
@@ -209,7 +185,7 @@
                                         </div>
                                     </div>
                                     <div class='card-table-row'>
-                                        <div class='card-table-label'>Data Compression:</div>
+                                        <div class='card-table-label'>Encoding:</div>
                                         <div class='card-table-value'>
                                             <a target='_blank' href='https://github.com/mapbox/geobuf'>
                                                 Geobuf
@@ -238,7 +214,7 @@
                                 <div class='card-table'>
                                     <div class='card-table-row inline-row'>
                                         <span class='contributor'>Zeki Xu:</span>
-                                        Map Design & Programming, Survey
+                                        Design & Code, Map Styles, Survey
                                     </div>
                                     <div class='card-table-row inline-row'>
                                         <span class='contributor'>Braeden Will:</span>

@@ -23,27 +23,56 @@ const short = {  // preformatting table
     common: 'cmn',
     square: 'sq',
     place: 'pl'
-  }
+}
+
+function hashSpec(name, spec) {
+    if (!name) name = '';
+    if (!spec) spec = '';
+    return name.trim() + '%' + spec.trim();
+}
 
 // input: csv from treeplotter export
-fetch('data/raw/Trees.csv')
+fetch('data/Trees.csv')
 .then(res => res.text())
 .then(async data => {
     data = data.split('\n').slice(1);  // break apart rows and skip first row
 
-    const landmarkReq = await fetch('data/raw/Landmarks.csv');
+    // first pass - split rows and index species
+    const specTable = {};
+    for (let i in data) {
+        data[i] = data[i].replaceAll('"', '').split(',');
+        row = data[i];
+
+        const hash = hashSpec(row[2], row[3]);
+        if (!specTable[hash]) specTable[hash] = 0;
+        specTable[hash]++;
+    }
+
+    // sort species table to rank species
+    const rankToSpec = Object.keys(specTable).sort((a, b) => specTable[b] - specTable[a]);
+    console.log(rankToSpec.map(s => s.split('%')));
+
+    // create reverse index of ranked species
+    const specToRank = {};
+    for (let i in rankToSpec)
+        specToRank[rankToSpec[i]] = +i;
+
+    // get landmarked pids to skip over those trees
+    const landmarkReq = await fetch('data/Landmarks.csv');
     const landmarkText = await landmarkReq.text();
     const landmarkRows = landmarkText.split('\n').slice(1).map(x => x.split(','));
     const landmarkIds = landmarkRows.filter(x => x.length > 1 && x[1].length > 0).map(x => +x[1]);
 
-    const trees = [];
+    let trees = [];
     data.forEach(row => {
-        row = row.replaceAll('"', '').split(',');
+        const id = +row[0];  // skip if already included in landmark trees
+        if (landmarkIds.indexOf(id) > -1) return;
 
         if (row[5] !== 'Alive') return;  // skip if not alive
 
-        const id = +row[0];  // skip if already included in landmark trees
-        if (landmarkIds.indexOf(id) > -1) return;
+        // find index of species
+        const hash = hashSpec(row[2], row[3]);
+        const index = specToRank[hash];
 
         let addr = row[1].split(' ').map(x => {  // format address
             x = x.toLowerCase();
@@ -55,10 +84,9 @@ fetch('data/raw/Trees.csv')
             type: 'Feature',
             id: id,
             properties: {
-                addr: addr,
-                name: row[2],
-                spec: row[3],
-                dbh: row[4]
+                A: addr,  // address
+                S: index,  // species index
+                D: +row[4]  // dbh
             },
             geometry: {
                 type: 'Point',
