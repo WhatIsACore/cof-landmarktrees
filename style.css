@@ -292,6 +292,41 @@ main {
     padding: 15px;
     margin: 10px 0;
 }
+.card .card-table {
+    margin-bottom: 15px;
+}
+.card .card-table-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+.card .card-table-label {
+    width: 8em;
+    font-size: 16px;
+}
+.card .card-table-value {
+    width: 50px;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.card .card-table-value:hover {
+    overflow: visible;
+}
+.card .card-subhead {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.card .card-info-spec {
+    font-style: italic;
+}
+.card .card-info-family {
+    font-style: italic;
+}
 .card .card-desc {
     font-size: 16px;
     line-height: 23px;
@@ -375,15 +410,6 @@ main {
 #landmark-card .card-photo.captioned:hover::after {
     opacity: 1;
 }
-
-#landmark-card .card-table {
-    margin-bottom: 15px;
-}
-#landmark-card .card-table-row {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
-}
 #landmark-card .card-table-left {
     display: flex;
     flex-direction: row;
@@ -396,22 +422,6 @@ main {
     flex-direction: row;
     width: 250px;
     flex-grow: 2;
-}
-#landmark-card .card-table-label {
-    width: 8em;
-    font-size: 16px;
-}
-#landmark-card .card-table-value {
-    width: 50px;
-    flex-grow: 1;
-    font-size: 16px;
-    font-weight: 700;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-#landmark-card .card-table-value:hover {
-    overflow: visible;
 }
 #landmark-card .card-table-left .card-table-label {
     width: 4.5em;
