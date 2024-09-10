@@ -1,3 +1,11 @@
+function downloadObj(exportObj, exportName) {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+    const anchor = document.createElement('a');
+    anchor.href = dataStr;
+    anchor.download = exportName + ".json";
+    anchor.click();
+    anchor.remove();
+}
 const downloadBlob = (data, fileName) => {
     let a = document.createElement('a');
     const url = URL.createObjectURL(new Blob([data]));
@@ -64,7 +72,7 @@ fetch('data/raw/Landmarks.csv')
             coordinates: [row[6], row[7]]
         });
     }
-    console.log(landmarks);  // landmarkData.json
+    downloadObj(landmarks, 'landmarkData.json');  // landmarkData.json
     return landmarks;
 })
 .then(json => {  // convert to geojson

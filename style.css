@@ -25,6 +25,7 @@ document, body {
     padding: 0;
     overflow: hidden;
     font-family: 'Figtree', sans-serif;
+    color: var(--color-dark);
 }
 
 body {
@@ -34,7 +35,7 @@ body {
 }
 header {
     height: 80px;
-    padding: 20px;
+    padding: 20px 25px;
     background-color: var(--color-light);
     border-bottom: 1px solid var(--color-dark);
     display: flex;
@@ -75,6 +76,18 @@ header .header-divider {
     margin: 0 20px;
     height: 100%;
     border-left: 1px solid var(--color-grey);
+}
+
+header a.nav-link.active {
+    font-weight: 700;
+}
+header a.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+header a.nav-link:not(.active):hover {
+    text-decoration: underline;
 }
 
 main {
@@ -442,10 +455,6 @@ main {
 }
 #attributions-card .card-table-value a:hover {
     opacity: 1
-}
-
-.maplibregl-ctrl-attrib {
-    display: none;
 }
 
 #overlays .footer {

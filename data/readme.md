@@ -1,0 +1,7 @@
+## data files:
+
+1. `data/layers/` should contain the following basemap layers (pulled from OSM, simplified, and compressed with a custom script): `Buildings.pbf`, `City.pbf`, `Parks.pbf`, `Greens.pbf`, `Streets.pbf`, `Water.pbf`.
+2. `data/layers/ParkLabels.pbf` and `data/layers/FeatureLabels.pbf` are a selection of hand-picked labeled points in Fremont. Includes all parks, high schools, middle schools, and notable locations like City Hall and the old Mission.
+3. `data/landmarkData.json` and `data/layers/Landmarks.pbf` are built from `tools/build-landmark.js` using the CSV of the 2024 Landmark Update spreadsheet as input. The JSON contains detailed landmark info that is fetched and displayed when a landmark is clicked, while the PBF is the feature layer to be added to the map.
+4. `data/layers/Trees.pbf` is the layer for all other public trees; and is built using `tools/build-trees.js` run AFTER the landmarks have been built and the above files have been created. This is because the script needs to know what the landmark trees are in order to exclude duplicating landmark trees as normal trees. This script will also create `data/speciesHash.json`, which is a file that the app uses to map species id numbers to the actual name and scientific name of the species. I did this to minify the request size and memory usage of the Trees layer.
+5. `data/species/*.json` contains the general Trefle data for each species of tree to be fetched when a tree is clicked.

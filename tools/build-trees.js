@@ -1,3 +1,11 @@
+function downloadObj(exportObj, exportName) {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportObj));
+    const anchor = document.createElement('a');
+    anchor.href = dataStr;
+    anchor.download = exportName + ".json";
+    anchor.click();
+    anchor.remove();
+}
 const downloadBlob = (data, fileName) => {
     let a = document.createElement('a');
     const url = URL.createObjectURL(new Blob([data]));
@@ -50,7 +58,7 @@ fetch('data/Trees.csv')
 
     // sort species table to rank species
     const rankToSpec = Object.keys(specTable).sort((a, b) => specTable[b] - specTable[a]);
-    console.log(rankToSpec.map(s => s.split('%')));
+    downloadObj(rankToSpec.map(s => s.split('%')), 'speciesHash.json');
 
     // create reverse index of ranked species
     const specToRank = {};
