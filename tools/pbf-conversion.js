@@ -12,7 +12,7 @@ fetch('data/Trees-processed.geojson')
     .then(data => geobuf.encode(data, new Pbf()))
     .then(data => downloadBlob(data, 'Trees.pbf'));
 
-fetch('data/Trees.pbf')
+fetch('data/layers/Trees.pbf')
     .then(data => data.arrayBuffer())
     .then(data => geobuf.decode(new Pbf(data)))
     .then(console.log);

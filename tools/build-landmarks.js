@@ -72,7 +72,7 @@ fetch('data/raw/Landmarks.csv')
             coordinates: [row[6], row[7]]
         });
     }
-    downloadObj(landmarks, 'landmarkData.json');  // landmarkData.json
+    downloadObj(landmarks, 'landmark-data.json');  // landmark-data.json
     return landmarks;
 })
 .then(json => {  // convert to geojson

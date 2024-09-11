@@ -58,7 +58,7 @@ fetch('data/Trees.csv')
 
     // sort species table to rank species
     const rankToSpec = Object.keys(specTable).sort((a, b) => specTable[b] - specTable[a]);
-    downloadObj(rankToSpec.map(s => s.split('%')), 'speciesHash.json');
+    downloadObj(rankToSpec.map(s => s.split('%')), 'species-hash.json');  // species-hash.json
 
     // create reverse index of ranked species
     const specToRank = {};
