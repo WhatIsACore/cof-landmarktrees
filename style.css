@@ -298,6 +298,8 @@ main {
 .card .card-table-row {
     display: flex;
     flex-direction: row;
+}
+.card .card-table-row:not(:last-child) {
     margin-bottom: 8px;
 }
 .card .card-table-label {
@@ -350,6 +352,28 @@ main {
 }
 .card .card-footer a:hover {
     opacity: 1;
+}
+
+#street-tree-card .card-table {
+    display: flex;
+    flex-direction: row;
+}
+#street-tree-card .card-table-left {
+    width: 0;
+    flex-grow: 1;
+}
+#street-tree-card .card-table-right {
+    margin-left: 20px;
+}
+#street-tree-card .card-leaf {
+    width: 50px;
+    height: 50px;
+    background-image: var(--photo-src);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: brightness(200%);
 }
 
 
