@@ -36,11 +36,17 @@ const short = {  // preformatting table
 function hashSpec(name, spec) {
     if (!name) name = '';
     if (!spec) spec = '';
+
+    if (name === 'Purpleleaf plum') {  // fix this dumb inconsistency
+        name = 'Purple-leaf plum'
+        spec = 'Prunus cerasifera';
+    }
+
     return name.trim() + '%' + spec.trim();
 }
 
 // input: csv from treeplotter export
-fetch('data/Trees.csv')
+fetch('data/raw/Trees.csv')
 .then(res => res.text())
 .then(async data => {
     data = data.split('\n').slice(1);  // break apart rows and skip first row
@@ -58,7 +64,7 @@ fetch('data/Trees.csv')
 
     // sort species table to rank species
     const rankToSpec = Object.keys(specTable).sort((a, b) => specTable[b] - specTable[a]);
-    downloadObj(rankToSpec.map(s => s.split('%')), 'species-hash.json');  // species-hash.json
+    downloadObj(rankToSpec.map(s => s.split('%')), 'species-hash');  // species-hash.json
 
     // create reverse index of ranked species
     const specToRank = {};
@@ -66,7 +72,7 @@ fetch('data/Trees.csv')
         specToRank[rankToSpec[i]] = +i;
 
     // get landmarked pids to skip over those trees
-    const landmarkReq = await fetch('data/Landmarks.csv');
+    const landmarkReq = await fetch('data/raw/Landmarks.csv');
     const landmarkText = await landmarkReq.text();
     const landmarkRows = landmarkText.split('\n').slice(1).map(x => x.split(','));
     const landmarkIds = landmarkRows.filter(x => x.length > 1 && x[1].length > 0).map(x => +x[1]);
