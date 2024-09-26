@@ -39,7 +39,12 @@ async function run(n) {
                 nSpecies++;
             });
 
-            const mostPlantedSpecies = Object.keys(slugs).map(x => [x, slugs[x], (slugs[x] / totalTrees * 100).toFixed(3) + '%']).sort((a, b) => b[1] - a[1]);
+            const mostPlantedSpecies = Object.keys(slugs).map(x => [
+                x,
+                slugs[x], 
+                (slugs[x] / totalTrees * 100).toFixed(3) + '%',
+                speciesDescs[x] != null
+            ]).sort((a, b) => b[1] - a[1]);
 
             console.log(`described trees: ${describedTrees} / ${totalTrees} (${(describedTrees / totalTrees * 100).toFixed(3)}%)`);
             console.log(mostPlantedSpecies);

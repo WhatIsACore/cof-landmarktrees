@@ -37,9 +37,13 @@ function hashSpec(name, spec) {
     if (!name) name = '';
     if (!spec) spec = '';
 
-    if (name === 'Purpleleaf plum') {  // fix this dumb inconsistency
-        name = 'Purple-leaf plum'
+    if (spec === 'Prunus pissardii') {  // fix major inconsistencies
+        name = 'Purple-leaf plum';
         spec = 'Prunus cerasifera';
+    }
+    if (spec === 'Pyrus kawakamii') {
+        name = 'Callery pear';
+        spec = 'Pyrus calleryana';
     }
 
     return name.trim() + '%' + spec.trim();
