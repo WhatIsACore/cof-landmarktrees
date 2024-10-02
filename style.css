@@ -56,15 +56,21 @@ header .right {
 }
 header h1 {
     font-size: 20px;
+    margin-block: 0;
 }
-header h1::before {
+header h1::after {
     display: inline-block;
     position: relative;
     content: url("assets/landmark-vector.svg");
-    margin-right: 8px;
-    top: 3px;
-    width: 20px;
+    margin-left: 8px;
+    top: 1px;
+    width: 0.8em;
     filter: brightness(1.4);
+}
+header h2 {
+    font-size: 14px;
+    margin-block: 0;
+    font-weight: 400;
 }
 
 header #logo {
@@ -279,7 +285,16 @@ main {
     padding: 0 20px 20px;
     overflow-y: auto;
     flex-grow: 1;
+    scrollbar-color: var(--color-primary) transparent;
+    scrollbar-width: thin;
 }
+.card .card-content::-webkit-scrollbar {
+    width: 8px;
+}
+.card .card-content::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+}
+
 .card .card-content h2 {
     font-size: 15px;
     font-weight: 700;
