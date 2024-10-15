@@ -5,7 +5,7 @@
     --color-dark: #0f0800;
     --color-primary: #c8d8c0;
     --color-green: #008800;
-    --footer-height: 60px;
+    --footer-height: 55px;
 }
 
 * {
@@ -61,7 +61,7 @@ header h1 {
 header h1::after {
     display: inline-block;
     position: relative;
-    content: url("assets/landmark-vector.svg");
+    content: url("/assets/landmark-vector.svg");
     margin-left: 8px;
     top: 1px;
     width: 0.8em;
@@ -91,6 +91,7 @@ header a.nav-link {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    text-align: center;
 }
 header a.nav-link:not(.active):hover {
     text-decoration: underline;
@@ -146,6 +147,19 @@ main {
     z-index: 100;
 }
 
+#overlays .landing-modal {
+
+}
+
+#overlays .left {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    height: calc(100% - var(--footer-height));
+    padding: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+}
 #overlays .right {
     position: absolute;
     right: 0;
@@ -155,6 +169,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 #search-wrapper {
     display: flex;
     flex-direction: row;
@@ -186,7 +201,7 @@ main {
     border: none;
     border-bottom: 2px solid var(--color-dark);
     background-color: var(--color-light);
-    opacity: 0.7;
+    opacity: 0.75;
     font-family: 'Figtree', sans-serif;
 }
 #search-wrapper input#search::placeholder {
@@ -216,7 +231,7 @@ main {
 }
 
 .card-wrapper {
-    height: 10px;
+    min-height: 400px;
     flex-grow: 1;
 }
 .card {
@@ -227,6 +242,7 @@ main {
     color: var(--color-dark);
     max-height: 100%;
     flex-direction: column;
+    border-radius: 5px;
 }
 .card .card-meta {
     font-size: 13px;

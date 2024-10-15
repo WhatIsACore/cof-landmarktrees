@@ -1,0 +1,179 @@
+:root {
+    --color-light: #fffffa;
+    --color-grey: #f0eee6;
+    --color-shadow: #ecf2e6;
+    --color-dark: #0f0800;
+    --color-primary: #c8d8c0;
+    --color-green: #008800;
+    --page-width: 1200px;
+    --min-margin: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+sup {
+    line-height: 0;
+    font-size: 0.6em;
+}
+
+document, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Figtree', sans-serif;
+    color: var(--color-dark);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    height: 80px;
+    padding: 20px 25px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    display: flex;
+    flex-direction: row;
+}
+header .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+header .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+header h1 {
+    font-size: 20px;
+    margin-block: 0;
+}
+header h1::after {
+    display: inline-block;
+    position: relative;
+    content: url("/assets/landmark-vector.svg");
+    margin-left: 8px;
+    top: 1px;
+    width: 0.8em;
+    filter: brightness(1.4);
+}
+header h2 {
+    font-size: 14px;
+    margin-block: 0;
+    font-weight: 400;
+}
+
+header #logo {
+    position: relative;
+    top: -2px;
+    height: 32px;
+}
+header .header-divider {
+    margin: 0 20px;
+    height: 100%;
+    border-left: 1px solid var(--color-grey);
+}
+
+header a.nav-link.active {
+    font-weight: 700;
+}
+header a.nav-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+header a.nav-link:not(.active):hover {
+    text-decoration: underline;
+}
+
+main {
+    position: relative;
+    height: 100px;
+    flex-grow: 1;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+.learn-title {
+    background-color: var(--color-green);
+    padding: 40px var(--min-margin);
+}
+.learn-title h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    max-width: var(--page-width);
+    margin: 0 auto;
+    color: var(--color-light);
+}
+
+.learn-section {
+    padding: 40px var(--min-margin);
+}
+
+.learn-explore-grid {
+    display: flex;
+    max-width: calc(var(--page-width) + 20px);
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.learn-explore-grid .learn-explore-article:nth-child(1) {
+    flex-grow: 2;
+    width: calc(2 / 3 * 100% - 40px);
+}
+.learn-explore-grid .learn-explore-article {
+    flex-grow: 1;
+    width: calc(1 / 3 * 100% - 40px);
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.learn-explore-grid .learn-explore-article .article-thumbnail {
+    height: 180px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.learn-explore-grid .learn-explore-article .article-thumbnail::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--color-green);
+    background-image: var(--source);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+.learn-explore-grid .learn-explore-article:hover .article-thumbnail::after {
+    transform: scale(1.05);
+}
+.learn-explore-grid .learn-explore-article .article-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-green);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+.learn-explore-grid .learn-explore-article .article-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-dark);
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "tag": "Urban Forest Impact",
+        "title": "$44M a year in benefits: reduced heat, cleaner air, healthier living, and more",
+        "thumbnail": "assets/trees.jpg"
+    },
+    {
+        "tag": "Young Tree Care",
+        "title": "How to care for your newly planted tree",
+        "thumbnail": "assets/sidewalk.jpg"
+    },
+    {
+        "tag": "Municipal Code",
+        "title": "Understanding Fremont's street tree ordinance",
+        "thumbnail": "assets/elizabeth.jpg"
+    },
+    {
+        "tag": "Right Tree, Right Place",
+        "title": "Choosing the right species for your planting location",
+        "thumbnail": "assets/youngtree.jpg"
+    },
+    {
+        "tag": "ISHB Notice",
+        "title": "Invasive tree beetle monitoring and detection",
+        "thumbnail": "assets/ishb.jpg"
+    }
+]
