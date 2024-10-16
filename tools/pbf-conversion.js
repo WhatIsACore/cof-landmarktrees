@@ -7,7 +7,7 @@ const downloadBlob = (data, fileName) => {
     setTimeout(() => URL.revokeObjectURL(url));
 }
 
-fetch('data/Trees-processed.geojson')
+fetch('data/raw/Trees-processed.geojson')
     .then(data => data.json())
     .then(data => geobuf.encode(data, new Pbf()))
     .then(data => downloadBlob(data, 'Trees.pbf'));
