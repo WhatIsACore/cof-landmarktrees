@@ -11,6 +11,7 @@ fetch('articles.json').then(res => res.json()).then(json => {
                 <div class='article-thumbnail' style='--source: url("${article.thumbnail}")'></div>
                 <div class='article-subtitle'>${article.tag}</div>
                 <div class='article-title'>${article.title.replace(/\s(?!\S*\s)/, '&nbsp;')}</div>
+                <div class='article-expand-btn'>read more</div>
             </div>
         `;
     $('.learn-explore-grid').innerHTML = html;

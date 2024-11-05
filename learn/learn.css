@@ -24,7 +24,6 @@ sup {
 document, body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: 'Figtree', sans-serif;
     color: var(--color-dark);
 }
@@ -32,7 +31,6 @@ document, body {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 header {
     height: 80px;
@@ -144,9 +142,9 @@ main {
 }
 
 .learn-explore-grid .learn-explore-article .article-thumbnail {
-    height: 180px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
     overflow: hidden;
 }
 
@@ -163,17 +161,38 @@ main {
     transition: transform 0.3s ease;
 }
 .learn-explore-grid .learn-explore-article:hover .article-thumbnail::after {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 .learn-explore-grid .learn-explore-article .article-subtitle {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--color-green);
     margin-bottom: 2px;
     text-transform: uppercase;
 }
 .learn-explore-grid .learn-explore-article .article-title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-dark);
+    margin-bottom: 10px;
+}
+.learn-explore-grid .learn-explore-article .article-expand-btn {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-dark);
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+.learn-explore-grid .learn-explore-article:hover .article-expand-btn {
+    opacity: 0.8;
+}
+.learn-explore-grid .learn-explore-article .article-expand-btn::after {
+    content: '»';
+    display: inline-block;
+    margin-left: 3px;
+    transition: margin-left 0.3s ease;
+}
+.learn-explore-grid .learn-explore-article:hover .article-expand-btn::after {
+    margin-left: 5px;
 }
